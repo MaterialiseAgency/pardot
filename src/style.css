@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+    @apply leading-tight text-3xl font-normal text-black mb-3; 
+   
+}
+input[type="text"]{
+    @apply w-full h-9 p-0 text-gray-500 bg-white bg-none border border-gray-200 border-solid text-base;    
+    text-indent: 5px;   
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input:focus, select:focus{
+    @apply border border-solid outline-none;
+    border-color: #00b1ea;
+    
+}
+select{
+    @apply w-full h-9 block px-2 overflow-hidden whitespace-nowrap border border-gray-200 border-solid text-gray-500 leading-9; 
+    text-overflow: ellipsis;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.required .field-label{
+    @apply relative;
+    
+}
+.required .field-label:after{
+    @apply inline-block top-0 right-0 text-red-600;
+    width: 6px;
+    height: 6px;
+    margin: 0 0.3em;
+    content: "*";
+   
+}
+
+.form p.small_field{
+    @apply xs:col-span-12 md:col-span-6 ;  
+   
+}
+.value span{
+    margin-right: 15px;
+}
+.value span label {
+    @apply text-black ml-1;    
+}
+.form_after_content p a{
+    color: rgba(96,165,250, 1);
+}
+
+ 
