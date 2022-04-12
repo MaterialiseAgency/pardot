@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-h2 {
-    @apply leading-tight text-3xl font-normal text-black mb-3; 
-   
+@font-face {
+    font-family: 'MetronicProRegular';
+    src: url('../Fonts/MetronicProRegular/MetronicProRegular.woff2') format('woff2'), url('../Fonts/MetronicProRegular/MetronicProRegular.woff') format('woff'), url('../Fonts/MetronicProRegular/MetronicProRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+h2 {
+    @apply leading-tight text-3xl font-normal text-black mb-3;
+}
+.newsletter_form_title{
+    @apply font-title_font_Metronic text-2xl text-center text-black;
+    letter-spacing: -0.01em;
+}
+
 input[type="text"]{
     @apply w-full h-9 p-0 text-gray-500 bg-white bg-none border border-gray-200 border-solid text-base;    
     text-indent: 5px;   

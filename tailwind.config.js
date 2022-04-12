@@ -24,7 +24,17 @@ module.exports = {
 
       
     },
-    extend: {},
+    fontFamily: {
+      content_font_Nunito: ['Nunito Sans'],
+      title_font_Metronic:["'MetronicProRegular'"],
+    },
+    
+    extend: {
+      colors: {
+        'secondary_500':'#F0B323',
+        'sub-text':'#4E5D6B',        
+      },
+    },
   },
   variants: {
     extend: {},
