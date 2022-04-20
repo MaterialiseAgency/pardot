@@ -32,12 +32,17 @@ module.exports = {
     extend: {
       colors: {
         'secondary_500':'#F0B323',
-        'sub-text':'#4E5D6B',        
+        'sub-text':'#4E5D6B',
+        'color-primary-800':'#001D36',
+        'color-text-link':'#3366CC',
+        'color-text-active':'#2953A6',
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['active'],
+    },
   },
   plugins: [],
 }
