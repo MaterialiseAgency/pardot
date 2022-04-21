@@ -29,7 +29,9 @@ input[type="text"]{
 input:focus, select:focus{
     @apply border border-solid outline-none;
     border-color: #00b1ea;
-    
+}
+input[type="submit"]:focus{
+    @apply border-2;
 }
 select{
     @apply w-full h-9 block px-2 overflow-hidden whitespace-nowrap border border-gray-200 border-solid text-gray-500 leading-9; 
