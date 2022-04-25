@@ -87,6 +87,17 @@ module.exports = {
         "mtls-color-text-button-secondary-900": "#181204",
         "mtls-color-button-secondary-500": "#F0B323",
       },
+      fontSize: {
+        "size-100": "0.875rem",
+        "size-200": "1rem",
+        "size-300": "1.125rem",
+        "size-400": "1.25rem",
+        "size-500": "1.375rem",
+        "size-600": "1.5rem",
+        "size-700": "1.75rem",
+        "size-800": "2.25rem",
+        "size-900": "3rem",
+      },
       letterSpacing: {
         "letter-spacing-neg-2": "-0.02em",
         "letter-spacing-neg-1": "-0.01em",
