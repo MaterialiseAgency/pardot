@@ -4,7 +4,7 @@ function Error(element){
         let el = elements[i];
         if(el.querySelector(element)){
             el.querySelector(element).onblur = function(){ 
-                if (el.querySelector(element).value === "") {
+                if (el.querySelector(element).value === "" || el.querySelector(element).value.trim()==="") {
                     el.classList.add("custom_error");
                 }
             };
