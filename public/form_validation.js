@@ -1,5 +1,5 @@
 const elements = document.querySelectorAll('p.required');
-function Error(element){    
+function Validate(element){    
     for(let i=0; i<elements.length; i++){
         let el = elements[i];
         if(el.querySelector(element)){
@@ -13,5 +13,5 @@ function Error(element){
             };
     }}
 }
-Error('input');
-Error('select');   
+Validate('input');
+Validate('select');
