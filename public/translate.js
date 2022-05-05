@@ -43,8 +43,8 @@ function pardot_add_error_message(language) {
   for (const [key] of Object.entries(error_texts)) {
     if (error_texts[`${key}`][`${language}`]) {
       console.log("it works");
-      document.querySelector(`.${key} .error_texts`)
-        ? (document.querySelector(`.${key} .error_texts`).textContent =
+      document.querySelector(`.${key} .error_text`)
+        ? (document.querySelector(`.${key} .error_text`).textContent =
             error_texts[`${key}`][`${language}`])
         : "";
     }
