@@ -23,3 +23,30 @@ function pardot_translate(language) {
     }
   }
 }
+
+function pardot_add_error_message(language) {
+  const error_texts = {
+    first_name: {
+      en: "Please provide your first name",
+      de: "TO TRANLSATE - Please provide your first name",
+    },
+    last_name: {
+      en: "Please provide your last name",
+      de: "TO TRANLSATE - Please provide your last name",
+    },
+    email: {
+      en: "Please provide your email address, formatted as  example@domain.com",
+      de: "TO TRANLSATE - Please provide your email address, formatted as  example@domain.com",
+    },
+  };
+
+  for (const [key] of Object.entries(error_texts)) {
+    if (error_texts[`${key}`][`${language}`]) {
+      console.log("it works");
+      document.querySelector(`.${key} .error_texts`)
+        ? (document.querySelector(`.${key} .error_texts`).textContent =
+            error_texts[`${key}`][`${language}`])
+        : "";
+    }
+  }
+}
