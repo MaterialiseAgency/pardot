@@ -88,7 +88,7 @@ p.error>label, p.custom_error>label{
 }
 
 .btn-primary {
-	@apply text-white border-solid border-2 bg-color-text-link border-white hover:bg-color-text-active active:bg-color-text-active focus:bg-color-text-link focus:border-black
+	@apply text-white border-solid border-2 bg-mtls-color-text-link border-white hover:bg-mtls-color-text-active active:bg-mtls-color-text-active focus:bg-mtls-color-text-link focus:border-black
 }
 
 .btn-regular {
