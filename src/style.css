@@ -92,5 +92,6 @@ p.error>label, p.custom_error>label{
 }
 
 .btn-regular {
-	@apply text-base py-3 px-8
+	@apply text-base py-3 px-8;
+	line-height: 1;
 }
