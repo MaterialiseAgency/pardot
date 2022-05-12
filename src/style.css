@@ -81,4 +81,16 @@ p.error>label, p.custom_error>label{
     @apply text-mtls-color-danger-highlight !important;
 }
 
- 
+/* buttons style */
+
+.btn {
+	@apply cursor-pointer font-content_font_Nunito font-semibold leading-none text-center rounded-md outline-none
+}
+
+.btn-primary {
+	@apply text-white border-solid border-2 bg-color-text-link border-white hover:bg-color-text-active active:bg-color-text-active focus:bg-color-text-link focus:border-black
+}
+
+.btn-regular {
+	@apply text-base py-3 px-8
+}
