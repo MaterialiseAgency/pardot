@@ -84,5 +84,5 @@ p.error>label, p.custom_error>label{
 /* links style */
 
 .link {
-	@apply text-mtls-color-text-link hover:text-mtls-color-text-active hover:bg-mtls-color-text-link-hover active:text-mtls-color-text-active focus:text-mtls-color-text-link visited:text-mtls-color-text-link-visited
+	@apply text-mtls-color-text-link hover:text-mtls-color-text-active hover:bg-mtls-color-background-link-hover active:text-mtls-color-text-active focus:text-mtls-color-text-link visited:text-mtls-color-text-link-visited
 }
