@@ -141,6 +141,7 @@ module.exports = {
     extend: {
       backgroundColor: ["active"],
       borderColor: ["active"],
+      textColor: ["active", "visited"],
     },
   },
   plugins: [],

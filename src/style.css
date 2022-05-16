@@ -81,6 +81,11 @@ p.error>label, p.custom_error>label{
     @apply text-mtls-color-danger-highlight !important;
 }
 
+/* links style */
+
+.link {
+	@apply text-mtls-color-text-link hover:text-mtls-color-text-active hover:bg-mtls-color-background-link-hover active:text-mtls-color-text-active focus:text-mtls-color-text-link visited:text-mtls-color-text-link-visited
+}
 /* buttons style */
 
 .btn {
