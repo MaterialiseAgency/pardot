@@ -81,4 +81,22 @@ p.error>label, p.custom_error>label{
     @apply text-mtls-color-danger-highlight !important;
 }
 
- 
+/* links style */
+
+.link {
+	@apply text-mtls-color-text-link hover:text-mtls-color-text-active hover:bg-mtls-color-background-link-hover active:text-mtls-color-text-active focus:text-mtls-color-text-link visited:text-mtls-color-text-link-visited
+}
+/* buttons style */
+
+.btn {
+	@apply cursor-pointer font-content_font_Nunito font-semibold leading-none text-center rounded-md outline-none
+}
+
+.btn-primary {
+	@apply text-white border-solid border-2 bg-mtls-color-text-link border-white hover:bg-mtls-color-text-active active:bg-mtls-color-text-active focus:bg-mtls-color-text-link focus:border-black
+}
+
+.btn-regular {
+	@apply text-base py-3 px-8;
+	line-height: 1;
+}
