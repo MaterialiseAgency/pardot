@@ -54,7 +54,7 @@ select{
 }
 
 .form p.small_field{
-    @apply xs:col-span-12 md:col-span-6;   
+    @apply sm:col-span-12 md:col-span-6;   
 }
 .value span{
     margin-right: 15px;

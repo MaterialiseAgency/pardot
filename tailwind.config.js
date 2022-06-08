@@ -2,24 +2,19 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    // based on https://www.figma.com/file/7V2FWyKI6ACqpS3zPpuiyy/Grid?node-id=124%3A120
     screens: {
-      "2xl": { max: "1535px" },
-      // => @media (max-width: 1535px) { ... }
+      sm: "600px",
+      // => @media (min-width: 640px) { ... }
 
-      xl: { max: "1279px" },
-      // => @media (max-width: 1279px) { ... }
+      md: "900px",
+      // => @media (min-width: 768px) { ... }
 
-      lg: { max: "1023px" },
-      // => @media (max-width: 1023px) { ... }
+      lg: "1200px",
+      // => @media (min-width: 1024px) { ... }
 
-      md: { max: "767px" },
-      // => @media (max-width: 767px) { ... }
-
-      sm: { max: "639px" },
-      // => @media (max-width: 639px) { ... }
-
-      xs: { max: "420px" },
-      // => @media (max-width: 420px) { ... }
+      xl: "1500px",
+      // => @media (min-width: 1280px) { ... }
     },
     fontFamily: {
       content_font_Nunito: ["Nunito Sans"],
