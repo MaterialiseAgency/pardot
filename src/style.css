@@ -4,18 +4,158 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'MetronicProRegular';
-    src: url('../Fonts/MetronicProRegular/MetronicProRegular.woff2') format('woff2'), url('../Fonts/MetronicProRegular/MetronicProRegular.woff') format('woff'), url('../Fonts/MetronicProRegular/MetronicProRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@layer base {
+  body {
+  @apply font-Nunito text-mtls-color-text
+  }
 }
 
+@font-face {
+  font-family: 'Metronic Pro Regular';
+  src: url('./fonts/MetronicPro/MetronicProRegular.woff2') format('woff2'),
+      url('/fonts/MetronicPro/MetronicProRegular.woff') format('woff'),
+      url('/fonts/MetronicPro/MetronicProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer components {
+
+  
+
+    .text-lead-lg {
+      @apply  text-size-600 font-weight-light leading-line-height-3 tracking-letter-spacing-neg-1;
+    }
+    .text-lead-md {
+      @apply  text-size-400 font-weight-light leading-line-height-3 tracking-letter-spacing-neg-1;
+    }
+    .text-paragraph-lg {
+      @apply  text-size-300 font-weight-regular leading-line-height-5 tracking-letter-spacing-normal;
+    }
+    .text-paragraph-md {
+      @apply  text-size-200 font-weight-regular leading-line-height-4 tracking-letter-spacing-normal;
+    }
+    .text-question-lg {
+      @apply  text-size-600 font-weight-bold leading-line-height-2 tracking-letter-spacing-neg-2;
+    }
+    .text-question-md {
+      @apply  text-size-500 font-weight-bold leading-line-height-2 tracking-letter-spacing-neg-2;
+    }
+    .text-bulleted-list-lg {
+      @apply  text-size-300 font-weight-regular leading-line-height-3 tracking-letter-spacing-normal;
+    }
+    .text-bulleted-list-md {
+      @apply  text-size-200 font-weight-regular leading-line-height-3 tracking-letter-spacing-normal;
+    }
+    .text-lg {
+      @apply  text-size-300 font-weight-regular leading-line-height-3 tracking-letter-spacing-normal;
+    }
+    .text-md {
+      @apply  text-size-200 font-weight-regular leading-line-height-3 tracking-letter-spacing-normal;
+    }
+    .text-sm {
+      @apply  text-size-100 font-weight-regular leading-line-height-1 tracking-letter-spacing-pos-2;
+    }
+    .text-ui-copy-md {
+      @apply  text-size-200 font-weight-semibold leading-line-height-3 tracking-letter-spacing-pos-2;
+    }
+    .text-ui-copy-sm {
+      @apply  text-size-100 font-weight-semibold leading-line-height-3 tracking-letter-spacing-pos-2;
+    }
+    .text-pull-quote-lg {
+      @apply  text-size-700 font-weight-semibold leading-line-height-3 tracking-letter-spacing-neg-1;
+    }
+    .text-pull-quote-md {
+      @apply  text-size-400 font-weight-semibold leading-line-height-3 tracking-letter-spacing-neg-1;
+    }
+    .text-card-title-lg {
+      @apply  text-size-800 font-weight-semibold leading-line-height-2 tracking-letter-spacing-neg-2;
+    }
+    .text-card-title-md {
+      @apply  text-size-600 font-weight-semibold leading-line-height-2 tracking-letter-spacing-neg-2;
+    }
+    .text-card-title-sm {
+      @apply  text-size-400 font-weight-semibold leading-line-height-2 tracking-letter-spacing-normal;
+    }
+    .text-card-title-xs {
+      @apply  text-size-200 font-weight-semibold leading-line-height-2 tracking-letter-spacing-normal;
+    }
+    .text-footer-md {
+      @apply  text-size-400 font-weight-bold leading-line-height-2 tracking-letter-spacing-normal;
+    }
+    .text-footer-sm {
+      @apply  text-size-200 font-weight-bold leading-line-height-1 tracking-letter-spacing-neg-1;
+    }
+    .text-button-lg {
+      @apply  text-size-300 font-weight-bold leading-line-height-1 tracking-letter-spacing-neg-1;
+    }
+    .text-button-md {
+      @apply  text-size-200 font-weight-bold leading-line-height-1 tracking-letter-spacing-pos-1;
+    }
+    .text-button-sm {
+      @apply  text-size-100 font-weight-bold leading-line-height-1 tracking-letter-spacing-pos-1;
+    }
+    .text-linkbox {
+      @apply  text-size-400 font-weight-semibold leading-line-height-3 tracking-letter-spacing-neg-2;
+    }
+    .text-linkbox-md {
+      @apply  text-size-200 font-weight-regular leading-line-height-3 tracking-letter-spacing-normal;
+    }
+    .text-link-md {
+      @apply  text-size-200 font-weight-regular leading-line-height-3 tracking-letter-spacing-neg-2;
+    }
+    /* headings */
+    .text-headline-1 {
+      @apply  text-size-900 font-weight-light leading-line-height-2 tracking-letter-spacing-neg-2;
+    }
+    .text-headline-1-with-subtitle {
+      @apply text-headline-1 font-weight-semibold;
+    }
+    .text-headline-2 {
+      @apply  text-size-800 font-weight-light leading-line-height-2 tracking-letter-spacing-neg-2;
+    }
+    .text-headline-2-with-subtitle {
+      @apply text-headline-2 font-weight-semibold;
+    }
+    .text-headline-3 {
+      @apply  text-size-600 font-weight-regular leading-line-height-2 tracking-letter-spacing-neg-1;
+    }
+    .text-headline-3-with-subtitle {
+      @apply text-headline-3 font-weight-semibold;
+    }
+    .text-headline-4 {
+      @apply  text-size-400 font-weight-regular leading-line-height-2 tracking-letter-spacing-normal;
+    }
+    .text-headline-5 {
+      @apply  text-size-300 font-weight-semibold leading-line-height-2 tracking-letter-spacing-normal;
+    }
+    .text-subtitle-lg {
+      @apply  text-size-700 font-weight-light leading-line-height-2 tracking-letter-spacing-neg-1;
+    }
+    .text-subtitle-md {
+      @apply  text-size-400 font-weight-light leading-line-height-2 tracking-letter-spacing-normal;
+    }
+    .text-subtitle-sm {
+      @apply  text-size-300 font-weight-light leading-line-height-2 tracking-letter-spacing-neg-1;
+    }
+    /* cta */
+    .cta-small {
+      @apply py-2 px-6 text-size-100 font-weight-bold leading-line-height-1;
+    }
+    .cta-regular {
+      @apply py-3 px-8 text-size-200 font-weight-bold leading-line-height-1;
+    }
+    .cta-large {
+      @apply py-4 px-8 text-size-200 font-weight-bold leading-line-height-1;
+    }
+  }
+
+
 h2 {
-    @apply leading-tight text-3xl font-normal text-black mb-3;
+    @apply font-Metronic leading-tight text-headline-2 font-normal;
 }
 .newsletter_form_title{
-    @apply font-title_font_Metronic text-2xl text-center text-black;
+    @apply  text-2xl text-center text-black;
     letter-spacing: -0.01em;
 }
 
@@ -54,7 +194,7 @@ select{
 }
 
 .form p.small_field{
-    @apply xs:col-span-12 md:col-span-6;   
+    @apply sm:col-span-12 md:col-span-6;   
 }
 .value span{
     margin-right: 15px;
@@ -89,7 +229,7 @@ p.error>label, p.custom_error>label{
 /* buttons style */
 
 .btn {
-	@apply cursor-pointer font-content_font_Nunito font-semibold leading-none text-center rounded-md outline-none
+	@apply cursor-pointer font-Nunito font-semibold leading-none text-center rounded-md outline-none
 }
 
 .btn-primary {
@@ -99,4 +239,25 @@ p.error>label, p.custom_error>label{
 .btn-regular {
 	@apply text-base py-3 px-8;
 	line-height: 1;
+}
+
+/* block */
+
+.block--list-check li {
+  @apply leading-line-height-5;
+  position: relative;
+  margin: 0 0 1rem 2rem
+}
+
+
+.block--list-check li:before {
+  color: #00b1ea;
+  content: '';
+  background-image: url('../public/assets/icons/icon-check-link.svg');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -32px;
+  top: 2%;
 }

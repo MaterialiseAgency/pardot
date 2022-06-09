@@ -2,31 +2,84 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    // based on https://www.figma.com/file/7V2FWyKI6ACqpS3zPpuiyy/Grid?node-id=124%3A120
     screens: {
-      "2xl": { max: "1535px" },
-      // => @media (max-width: 1535px) { ... }
+      sm: "600px",
+      // => @media (min-width: 640px) { ... }
 
-      xl: { max: "1279px" },
-      // => @media (max-width: 1279px) { ... }
+      md: "900px",
+      // => @media (min-width: 768px) { ... }
 
-      lg: { max: "1023px" },
-      // => @media (max-width: 1023px) { ... }
+      lg: "1200px",
+      // => @media (min-width: 1024px) { ... }
 
-      md: { max: "767px" },
-      // => @media (max-width: 767px) { ... }
-
-      sm: { max: "639px" },
-      // => @media (max-width: 639px) { ... }
-
-      xs: { max: "420px" },
-      // => @media (max-width: 420px) { ... }
+      xl: "1500px",
+      // => @media (min-width: 1280px) { ... }
     },
     fontFamily: {
-      content_font_Nunito: ["Nunito Sans"],
-      title_font_Metronic: ["MetronicProRegular"],
+      Nunito: ["Nunito Sans"],
+      Metronic: ["Metronic Pro Regular"],
+      Roboto: ["Roboto"],
     },
 
     extend: {
+      gridTemplateColumns: {
+        24: "repeat(24, minmax(0, 1fr))",
+      },
+      gridColumnStart: {
+        12: "12",
+        13: "13",
+        14: "14",
+        15: "15",
+        16: "16",
+        17: "17",
+        18: "18",
+        19: "19",
+        20: "20",
+        21: "21",
+        22: "22",
+        23: "23",
+        24: "24",
+      },
+      gridColumnEnd: {
+        12: "12",
+        13: "13",
+        14: "14",
+        15: "15",
+        16: "16",
+        17: "17",
+        18: "18",
+        19: "19",
+        20: "20",
+        21: "21",
+        22: "22",
+        23: "23",
+        24: "24",
+      },
+      gridColumn: {
+        "span-13": "span 13 / span 13",
+        "span-14": "span 14 / span 14",
+        "span-15": "span 15 / span 15",
+        "span-16": "span 16 / span 16",
+        "span-17": "span 17 / span 17",
+        "span-18": "span 18 / span 18",
+        "span-19": "span 19 / span 19",
+        "span-20": "span 20 / span 20",
+        "span-21": "span 21 / span 21",
+        "span-22": "span 22 / span 22",
+        "span-23": "span 23 / span 23",
+        "span-24": "span 24 / span 24",
+      },
+      colors: {
+        mat_primary: "#F58025",
+        mat_primar_light: "#FCD7BA",
+        mat_gray: "#EAEAEA",
+        mat_gray_light: "#F7F7F7",
+        mat_black: "#030303",
+        mat_black_light: "#343434",
+        mat_form_fields: "#F7F9FC",
+        mat_gray_bold: "#8F8F8F",
+      },
       colors: {
         secondary_500: "#F0B323",
         "sub-text": "#4E5D6B",
