@@ -1,9 +1,8 @@
 {
   "scripts": {
-    "build-min-css": "tailwindcss build src/style.css -o public/style_min.css --minify ",
-    "build-css": "npx tailwindcss -i ./src/style.css -o ./public/style.css --watch"
+    "build-css": "npx tailwindcss -i ./src/style.css -o ./public/style.css --watch",
+    "build-min-css": "css-minify -d /public/style.css -o public/style_min.css"
   },
-
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.4",
