@@ -18,7 +18,7 @@ module.exports = {
     },
     fontFamily: {
       Nunito: ["Nunito Sans"],
-      Metronic: ["MetronicProRegular"],
+      Metronic: ["Metronic Pro Regular"],
       Roboto: ["Roboto"],
     },
 

@@ -4,23 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+  @apply font-Nunito text-mtls-color-text
+  }
+}
+
 @font-face {
-  font-family: 'MetronicProRegular';
+  font-family: 'Metronic Pro Regular';
   src: url('./fonts/MetronicPro/MetronicProRegular.woff2') format('woff2'),
       url('/fonts/MetronicPro/MetronicProRegular.woff') format('woff'),
       url('/fonts/MetronicPro/MetronicProRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
-
-@layer base {
-  body {
-  @apply font-Nunito
-  }
-}
-
-
 
 @layer components {
     .text-lead-lg {
@@ -151,16 +148,8 @@
   }
 
 
-@font-face {
-    font-family: 'MetronicProRegular';
-    src: url('../Fonts/MetronicProRegular/MetronicProRegular.woff2') format('woff2'), url('../Fonts/MetronicProRegular/MetronicProRegular.woff') format('woff'), url('../Fonts/MetronicProRegular/MetronicProRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 h2 {
-    @apply font-Metronic leading-tight text-3xl font-normal text-black mb-3;
+    @apply font-Metronic leading-tight text-headline-2 font-normal;
 }
 .newsletter_form_title{
     @apply  text-2xl text-center text-black;
