@@ -20,6 +20,9 @@
 }
 
 @layer components {
+
+  
+
     .text-lead-lg {
       @apply  text-size-600 font-weight-light leading-line-height-3 tracking-letter-spacing-neg-1;
     }
@@ -236,4 +239,25 @@ p.error>label, p.custom_error>label{
 .btn-regular {
 	@apply text-base py-3 px-8;
 	line-height: 1;
+}
+
+/* block */
+
+.block--list-check li {
+  @apply leading-line-height-5;
+  position: relative;
+  margin: 0 0 1rem 2rem
+}
+
+
+.block--list-check li:before {
+  color: #00b1ea;
+  content: '';
+  background-image: url('../public/assets/icons/icon-check-link.svg');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -32px;
+  top: 2%;
 }
