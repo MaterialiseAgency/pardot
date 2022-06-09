@@ -4,12 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './fonts.css';
-
-:root {
-  --primary-font: 'NunitoSans';
-  --secondary-font: 'MetronicPro';
+@font-face {
+  font-family: 'MetronicProRegular';
+  src: url('./fonts/MetronicPro/MetronicProRegular.woff2') format('woff2'),
+      url('/fonts/MetronicPro/MetronicProRegular.woff') format('woff'),
+      url('/fonts/MetronicPro/MetronicProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+
+@layer base {
+  body {
+  @apply font-Nunito
+  }
+}
+
+
 
 @layer components {
     .text-lead-lg {
@@ -149,7 +160,7 @@
 
 
 h2 {
-    @apply font-title_font_Metronic leading-tight text-3xl font-normal text-black mb-3;
+    @apply font-Metronic leading-tight text-3xl font-normal text-black mb-3;
 }
 .newsletter_form_title{
     @apply  text-2xl text-center text-black;
@@ -226,7 +237,7 @@ p.error>label, p.custom_error>label{
 /* buttons style */
 
 .btn {
-	@apply cursor-pointer font-content_font_Nunito font-semibold leading-none text-center rounded-md outline-none
+	@apply cursor-pointer font-Nunito font-semibold leading-none text-center rounded-md outline-none
 }
 
 .btn-primary {
