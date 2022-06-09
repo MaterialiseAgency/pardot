@@ -1,0 +1,95 @@
+@tailwind base;
+
+@layer base {
+  /* METRONIC PRO */
+
+  @font-face {
+    font-family: 'MetronicPro';
+    src: url('./fonts/MetronicPro/MetronicProAir.ttf')
+      format('truetype');
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'MetronicPro';
+    src: url('./fonts/MetronicPro/MetronicProLight.ttf')
+      format('truetype');
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'MetronicPro';
+    src: url('./fonts/MetronicPro/MetronicProRegular.ttf')
+      format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'MetronicPro';
+    src: url('./fonts/MetronicPro/MetronicProSemiBold.ttf')
+      format('truetype');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'MetronicPro';
+    src: url('./fonts/MetronicPro/MetronicProBold.ttf')
+      format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  /* NUNITO */
+
+  @font-face {
+    font-family: 'NunitoSans';
+    src: url('./fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf')
+      format('truetype');
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'NunitoSans';
+    src: url('./fonts/Nunito_Sans/NunitoSans-Light.ttf')
+      format('truetype');
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'NunitoSans';
+    src: url('./fonts/Nunito_Sans/NunitoSans-Regular.ttf')
+      format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'NunitoSans';
+    src: url('./fonts/Nunito_Sans/NunitoSans-SemiBold.ttf')
+      format('truetype');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'NunitoSans';
+    src: url('./fonts/Nunito_Sans/NunitoSans-Bold.ttf')
+      format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+}

@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './fonts.css';
+
+:root {
+  --primary-font: 'NunitoSans';
+  --secondary-font: 'MetronicPro';
+}
 
 @layer components {
     .text-lead-lg {
@@ -141,12 +147,12 @@
     font-style: normal;
 }
 
+
 h2 {
-    @apply leading-tight text-3xl font-normal text-black mb-3;
-    font-family: 'MetronicProRegular';
+    @apply font-title_font_Metronic leading-tight text-3xl font-normal text-black mb-3;
 }
 .newsletter_form_title{
-    @apply font-title_font_Metronic text-2xl text-center text-black;
+    @apply  text-2xl text-center text-black;
     letter-spacing: -0.01em;
 }
 
