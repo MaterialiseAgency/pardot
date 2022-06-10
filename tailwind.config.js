@@ -5,16 +5,16 @@ module.exports = {
     // based on https://www.figma.com/file/7V2FWyKI6ACqpS3zPpuiyy/Grid?node-id=124%3A120
     screens: {
       sm: "600px",
-      // => @media (min-width: 640px) { ... }
+      // => @media (min-width: 600px) { ... }
 
       md: "900px",
-      // => @media (min-width: 768px) { ... }
+      // => @media (min-width: 900px) { ... }
 
       lg: "1200px",
-      // => @media (min-width: 1024px) { ... }
+      // => @media (min-width: 1200px) { ... }
 
-      xl: "1500px",
-      // => @media (min-width: 1280px) { ... }
+      xl: "1870px",
+      // => @media (min-width: 1870px) { ... }
     },
     fontFamily: {
       Nunito: ["Nunito Sans"],
