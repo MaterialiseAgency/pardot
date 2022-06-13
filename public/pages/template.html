@@ -146,8 +146,8 @@
                     understand how our end-to-end, AM-native enterprise platform enables repeatability and greater
                     connectivity in your production.
                 </p>
-                <p class="mt-8 w-full "><a href="#"
-                        class="btn btn-regular bg-mtls-color-text-link  md:inline block w-full">Register
+                <p onclick="toogleModal(event)" class="mt-8 w-full register"><a href="#"
+                        class=" btn btn-regular ">Register
                         now</a></p>
             </div>
         </section>
@@ -163,6 +163,28 @@
         footer
     </footer>
     <!-- End Footer -->
+    <!-- Modal -->
+    <section>
+        <div id="modal" class="hidden" style="background:RGBA(19, 20, 21, 0.7)">
+            <div class="h-auto w-full min-w-full bg-white md:w-2/5 md:min-w-[550px] relative">
+                <div> <button class="btn-close absolute top-4 right-4 h-10 w-10 cursor-pointer" type="button"
+                        onclick="toogleModal(event)"></button></div>
+                <div class="px-8 pb-8 mt-20">
+                    some content
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- End Modal -->
+
+    <script>
+        (toogleModal) = (event) => {
+            document.getElementById("modal").classList.toggle("modal");
+        }
+
+    </script>
 
 </body>
 

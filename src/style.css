@@ -236,28 +236,53 @@ p.error>label, p.custom_error>label{
 	@apply text-white border-solid border-2 bg-mtls-color-text-link border-white hover:bg-mtls-color-text-active active:bg-mtls-color-text-active focus:bg-mtls-color-text-link focus:border-black
 }
 
+
 .btn-regular {
-	@apply text-base py-3 px-8;
+	@apply text-base py-3 px-8 bg-mtls-color-text-link  md:inline block w-full;
 	line-height: 1;
+}
+
+.btn-regular:hover {
+ @apply bg-mtls-color-text-active
+}
+
+
+.btn-close:after {
+  content: '';
+  top: 0;
+  right: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  cursor: pointer;
+  background: url('../public/assets/icons/icon-close-default.svg') no-repeat;
+  background-size: cover;
+} 
+.btn-close:hover{
+  background-color: #f7f8f9;
+}
+
+.modal {
+  @apply fixed top-0 bottom-0 min-w-full grid left-0 right-0 p-5 pb-10 pt-16 md:pt-10 px-10 md:px-24 z-20
 }
 
 /* block */
 
 .block--list-check li {
-  @apply leading-line-height-5;
-  position: relative;
+  @apply leading-line-height-5 relative;
   margin: 0 0 1rem 2rem
 }
 
 
 .block--list-check li:before {
+  @apply w-6 h-6 absolute;
   color: #00b1ea;
   content: '';
   background-image: url('../public/assets/icons/icon-check-link.svg');
   background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-  position: absolute;
   left: -32px;
   top: 2%;
 }
+
+
+
