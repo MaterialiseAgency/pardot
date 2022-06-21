@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <title>Document</title>
+    <base href="https://go.materialise.com">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="%%description%%" />
+    <link rel="stylesheet" href="https://raw.githack.com/MaterialiseAgency/pardot/main/public/style.css">
+    <script src="https://raw.githack.com/MaterialiseAgency/pardot/main/public/translate.js"></script>
+    <title>%%title%%</title>
 </head>
 
 <body class="flex flex-col h-screen justify-between">
@@ -18,7 +20,8 @@
         <!-- Note Block -->
         <section class="px-8 py-4 grid grid-cols-12 bg-mtls-color-background-link-hover" id="block-1">
             <div class="xl:col-span-8 xl:col-start-2 md:col-span-10 md:col-start-2  col-span-12 text-sub-text ">
-                <p>* Please note: It is not possible to register for MECSPE on this page. Please visit the official site
+                <p class="mb-6 md:text-headline-2" pardot-region="Block 1 Text" pardot-region-type="simple">* Please
+                    note: It is not possible to register for MECSPE on this page. Please visit the official site
                     to purchase tickets or complete your registration.</p>
             </div>
         </section>
@@ -28,18 +31,27 @@
         <section id="block-2" class="py-8 px-8 md:py-16 grid grid-cols-12 bg-mtls-color-neutral-100">
             <div
                 class="block--list-check text-mtls-color-primary-700 xl:col-span-5 xl:col-start-2 md:col-span-5 md:col-start-2 col-span-12  ">
-                <h2 class="mb-6 md:text-headline-2 ">What you will learn</h2>
-                <ul class="block--list-check text-lg">
-                    <li>Gain insights on how to get the best out of CAD and mesh for file and build preparation using
-                        Magics 26
-                    </li>
-                    <li>Learn how our AM-native enterprise platform enables repeatability and greater connectivity in
-                        your production</li>
-                    <li>Discover how we’re partnering with others to drive solutions and deliver meaningful 3DP
-                        applications</li>
-                    <li>View demos on Magics 26, Link3D, Build Processor, Workflow Automation, Process Tuner, and
-                        Storefront software</li>
-                </ul>
+                <h2 class="mb-6 md:text-headline-2" pardot-region="Block 2 Header" pardot-region-type="simple">What you
+                    will learn</h2>
+                <div pardot-region="Block 2 Text" pardot-region-type="basic">
+
+                    <ul class="block--list-check text-lg">
+                        <li>Gain insights on how to get the best out of CAD and mesh for file and build preparation
+                            using
+                            Magics 26
+                        </li>
+                        <li>Learn how our AM-native enterprise platform enables repeatability and greater connectivity
+                            in
+                            your production</li>
+                        <li>Discover how we’re partnering with others to drive solutions and deliver meaningful 3DP
+                            applications</li>
+                        <li>View demos on Magics 26, Link3D, Build Processor, Workflow Automation, Process Tuner, and
+                            Storefront software</li>
+                    </ul>
+
+
+                </div>
+
             </div>
         </section>
         <!-- End Why attend Block -->
@@ -137,16 +149,21 @@
 
         <!--  Register Block -->
         <section id="block-9" class="py-12 px-8 md:py-32 grid grid-cols-12 bg-color-primary-800">
-            <div
-                class="block--list-check text-white xl:col-span-5 xl:col-start-2 md:col-span-5 md:col-start-2 col-span-12  ">
-                <h2 class="md:text-headline-2 mb-6 ">Join Materialise at RAPID
+            <div class="block--list-check  xl:col-span-5 xl:col-start-2 md:col-span-5 md:col-start-2 col-span-12  ">
+                <h2 class="md:text-headline-2 mb-6 text-white" pardot-region="Block 9 Header"
+                    pardot-region-type="simple">Join Materialise at RAPID
                 </h2>
-                <p class="text-lg">
-                    Come to booth 3108 and learn how to get the best out of CAD and mesh using Magics 26. You’ll also
-                    understand how our end-to-end, AM-native enterprise platform enables repeatability and greater
-                    connectivity in your production.
+                <p class="text-lg " pardot-region="Block 9 Text" pardot-region-type="basic">
+                    <span class="text-white">
+
+                        Come to booth 3108 and learn how to get the best out of CAD and mesh using Magics 26. You’ll
+                        also
+                        understand how our end-to-end, AM-native enterprise platform enables repeatability and greater
+                        connectivity in your production.
+                    </span>
+
                 </p>
-                <p onclick="toogleModal(event)" class="mt-8 w-full register"><a href="#"
+                <p onclick="toogleModal(event)" class="mt-8 w-full register text-white"><a href="javascript:void(0)"
                         class=" btn btn-regular ">Register
                         now</a></p>
             </div>
@@ -170,7 +187,7 @@
                 <div> <button class="btn-close absolute top-4 right-4 h-10 w-10 cursor-pointer" type="button"
                         onclick="toogleModal(event)"></button></div>
                 <div class="px-8 pb-8 mt-20">
-                    some content
+                    %%content%%
                 </div>
             </div>
         </div>
@@ -181,11 +198,29 @@
 
     <script>
         (toogleModal) = (event) => {
+
             document.getElementById("modal").classList.toggle("modal");
+            console.log('test');
         }
 
     </script>
 
+    <code pardot-region="hide_elements">
+    <style> <![CDATA[
+        #block_1 {
+            display:block;
+            order: 1;
+        }
+         #block_2 {
+            display:block;
+            order: 2;
+        }
+         #block_3 {
+            display:block;
+            order: 3;
+        }
+    ]]></style>
+</code>
 </body>
 
 </html>
