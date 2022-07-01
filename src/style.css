@@ -20,9 +20,6 @@
 }
 
 @layer components {
-
-  
-
     .text-lead-lg {
       @apply  text-size-600 font-weight-light leading-line-height-3 tracking-letter-spacing-neg-1;
     }
@@ -151,9 +148,16 @@
   }
 
 
-h2 {
-    @apply font-Metronic leading-tight text-headline-2 font-normal;
+h1, .text-headline-1 {
+  @apply font-Metronic leading-tight;
 }
+h2 {
+  @apply font-Metronic leading-tight text-headline-2;
+}
+h3 {
+  @apply font-Metronic leading-tight text-headline-3;
+}
+
 .newsletter_form_title{
     @apply  text-2xl text-center text-black;
     letter-spacing: -0.01em;
