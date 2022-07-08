@@ -7,3 +7,5 @@ let mainImageLink = document
 metaLinkOgImage.content = mainImageLink;
 console.log(mainImageLink);
 document.getElementsByTagName("head")[0].appendChild(metaLinkOgImage);
+
+// seo_before_gtm.js
