@@ -2,18 +2,45 @@
 <html>
 
 <head>
-    <base href="https://go.materialise.com">
+    <!-- <base href="https://go.materialise.com">-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="%%description%%" />
+    <meta property="og:site_name" content="Materialise" />
+    <meta property="og:title" content=" Materialise" />
     <link rel="stylesheet" href="https://raw.githack.com/MaterialiseAgency/pardot/main/public/style.css">
     <script src="https://raw.githack.com/MaterialiseAgency/pardot/main/public/translate.js"></script>
-    <title>%%title%%</title>
+    <title>Materialise</title>
+    <script src="seo.js"></script>
+    <!-- Google Tag Manager -->
+
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-MTSJJX9');</script>
+
+    <!-- End Google Tag Manager -->
 </head>
 
 <body class="flex flex-col h-screen justify-between">
+    <!-- Google Tag Manager (noscript) -->
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTSJJX9" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Header -->
+
+
     <header>
         <div class="bg-white grid grid-cols-12">
             <div class="my-10 col-start-2 col-span-10 md:col-span-5 md:col-start-2 h-auto">
@@ -53,8 +80,8 @@
                 <p class="text-white"><a href="#" class="btn btn-regular" pardot-region="editable-link"
                         pardot-region-type="link">Book a meeting with us</a></p>
             </div>
-            <div
-                class="sm:col-start-1 md:col-start-7 sm:col-span-12 md:col-span-6 h-auto sm:row-start-1 col-start-1 col-span-12 row-start-1 flex justify-end">
+            <div id="main_image"
+                class="sm:col-start-1 md:col-start-7 sm:col-span-12 md:col-span-6 h-auto sm:row-start-1 col-start-1 col-span-12 row-start-1 flex justify-end ">
                 <img src="https://www.materialise.com/sites/default/files/uploads/header_event_template.jpg"
                     pardot-region="editable-main-image" pardot-region-type="image" />
             </div>
@@ -279,19 +306,11 @@
         </div>
 
     </section>
-
+    <script src='events.js'></script>
     <!-- End Modal -->
 
-    <script>
-        (toogleModal) = (event) => {
 
-            document.getElementById("modal").classList.toggle("modal");
-            console.log('test');
-        }
-
-    </script>
-
-    <code pardot-region="hide_elements">
+    <!--   <code pardot-region="hide_elements">
     <style> <![CDATA[
         #block_1 {
             display:block;
@@ -306,7 +325,13 @@
             order: 3;
         }
     ]]></style>
-</code>
+  </code>
+-->
+
+
+
+
+    <script src="seo_after_gtm.js"></script>
 </body>
 
 </html>
