@@ -6,9 +6,11 @@ document.getElementsByTagName("head")[0].appendChild(metaLinkUrl);
 
 // pushh the channel
 let metaDescription = document.querySelector('meta[name="description"]');
-metaDescription = metaDescription.getAttribute("content");
+let metaDescriptionContent = metaDescription.getAttribute("content");
 const regex = /{(.*?)}/gm;
-let foundChannel = metaDescription.match(regex);
+let foundChannel = metaDescriptionContent.match(regex);
+metaDescriptionContent = metaDescriptionContent.replace(foundChannel, "");
+metaDescription.setAttribute("content", metaDescriptionContent.trim());
 let channel = foundChannel[0].slice(1);
 channel = channel.slice(0, -1);
 window.dataLayer = window.dataLayer || [];
