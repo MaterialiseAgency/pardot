@@ -163,14 +163,14 @@ h3 {
     letter-spacing: -0.01em;
 }
 
-input[type="text"]{
+input[type="text"], textarea{
     @apply w-full h-9 p-0 text-gray-500 bg-white bg-none border border-gray-200 border-solid text-base;    
     text-indent: 5px;   
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-input:focus, select:focus{
+input:focus, select:focus, textarea:focus-visible{
     @apply border border-solid outline-none;
     border-color: #00b1ea;
 }
@@ -286,6 +286,24 @@ p.error>label, p.custom_error>label{
   background-repeat: no-repeat;
   left: -32px;
   top: 2%;
+}
+
+/* Newsletter subscribe */
+.WF_XBU_Newsletter_subscribe{
+  @apply flex flex-row-reverse justify-start items-center;  
+}
+.WF_XBU_Newsletter_subscribe label{
+    color: rgba(107,114,128,1)!important;
+    line-height: 1.625!important;
+    font-size: .75rem!important;
+    font-weight: 400!important;
+}
+.WF_XBU_Newsletter_subscribe .value label{
+  @apply hidden;
+  
+}
+.WF_XBU_Newsletter_subscribe .value span {
+  @apply mr-3;  
 }
 
 
