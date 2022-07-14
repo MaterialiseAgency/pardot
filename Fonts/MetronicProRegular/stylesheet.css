@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'MetronicProRegular';
-    src: url('MetronicProRegular.woff2') format('woff2'),
-        url('MetronicProRegular.woff') format('woff'),
-        url('MetronicProRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
