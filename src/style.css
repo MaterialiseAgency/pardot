@@ -170,9 +170,13 @@ input[type="text"], textarea{
     -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-input:focus, select:focus, textarea:focus-visible{
+input:focus, select:focus, textarea:focus-visible, textarea:focus{
     @apply border border-solid outline-none;
     border-color: #00b1ea;
+}
+textarea:focus-visible, textarea:focus{
+  @apply border border-solid outline-none;
+  border-color: #00b1ea!important;
 }
 input[type="submit"]:focus{
     @apply border-2;
@@ -304,6 +308,23 @@ p.error>label, p.custom_error>label{
 }
 .WF_XBU_Newsletter_subscribe .value span {
   @apply mr-3;  
+}
+.icon{
+  position: relative;
+  padding-left: 50px;
+}
+.icon-calendar:before{
+  content: attr('../assets/icons/calendar-icon.svg');
+  width: 35px;
+  height: auto;
+  position: absolute;
+
+}
+.icon-location{
+  content: attr('./assets/icons/location-icon.svg');
+  width: 35px;
+  height: auto;
+  position: absolute;
 }
 
 

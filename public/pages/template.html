@@ -31,6 +31,33 @@
         })(window, document, 'script', 'dataLayer', 'GTM-MTSJJX9');</script>
 
     <!-- End Google Tag Manager -->
+    <style>
+        .icon{
+            position: relative;
+            padding-left: 50px;
+        }
+        .icon-calendar::before{
+            content: url('../assets/icons/calendar-icon.svg');        
+            width: 35px;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .icon-location::before{
+            content: url('../assets/icons/location-icon.svg');
+        
+        width: 35px;
+        height: auto;
+        position: absolute;        
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        }
+    </style>
 </head>
 
 <body class="flex flex-col h-screen justify-between">
@@ -68,8 +95,8 @@
                 <h1 pardot-region="Title" pardot-region-type="simple"
                     class="mb-4 font-Metronic  text-headline-1 leading-tight">See Materialise at MECSPE</h1>
                 <div pardot-region="Time" class="text-lg mb-4" style="color:#5C94C5;">
-                    <p class="flex items-center"><img src="../assets/icons/calendar-icon.svg" alt="" class="inline-block mr-4"> June 9-11, 2022</p>
-                    <p class="flex items-center"><img src="../assets/icons/location-icon.svg" alt="" class="inline-block mr-4"> Booth G25 - Bologna Fiere - Bologna, Italy</p>
+                    <p class="flex items-center icon icon-calendar"> June 9-11, 2022</p>
+                    <p class="flex items-center icon icon-location"> Booth G25 - Bologna Fiere - Bologna, Italy</p>
                 </div>
                 <div pardot-region="Main text" class="text-2xl leading-9 mb-6">
                     <p>Join us at this international manufacturing fair to discover innovations in the industry and
@@ -80,8 +107,8 @@
                 </div>
 
 
-                <p onclick="toogleModal(event)" class="text-white"><a href="#" class="btn btn-regular" pardot-region="editable-link"
-                        pardot-region-type="link" id="book-link">Book a meeting with us</a></p>
+                <p onclick="toogleModal(event)" class="text-white"><a href="#" class="btn btn-regular register-link" pardot-region="editable-link"
+                        pardot-region-type="link" >Book a meeting with us</a></p>
             </div>
             <div id="main_image"
                 class="sm:col-start-1 md:col-start-7 sm:col-span-12 md:col-span-6 h-auto sm:row-start-1 col-start-1 col-span-12 row-start-1 flex justify-end ">
@@ -292,7 +319,7 @@
 
                 </p>
                 <p onclick="toogleModal(event)" class="mt-8 w-full register text-white"><a href="javascript:void(0)"
-                        class=" btn btn-regular" id="register-link" pardot-region="editable-register-link"
+                        class=" btn btn-regular register-link" pardot-region="editable-register-link"
                         pardot-region-type="link">Register
                         now</a></p>
             </div>
