@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-  @apply font-Nunito text-mtls-color-text
+  @apply font-Nunito text-mtls-color-text;
   }
 }
 
@@ -170,9 +170,13 @@ input[type="text"], textarea{
     -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-input:focus, select:focus, textarea:focus-visible{
+input:focus, select:focus, textarea:focus-visible, textarea:focus{
     @apply border border-solid outline-none;
     border-color: #00b1ea;
+}
+textarea:focus-visible, textarea:focus{
+  @apply border border-solid outline-none;
+  border-color: #00b1ea!important;
 }
 input[type="submit"]:focus{
     @apply border-2;
@@ -305,6 +309,22 @@ p.error>label, p.custom_error>label{
 .WF_XBU_Newsletter_subscribe .value span {
   @apply mr-3;  
 }
+.icon{
+  position: relative;  
+}
+.icon-calendar::before{
+  content: url('../public/assets/icons/calendar-icon.svg');        
+  @apply h-auto absolute w-9 top-0 left-0 bottom-0 m-auto;
+}
+.icon-location::before{
+  content: url('../public/assets/icons/location-icon.svg');  
+  @apply h-auto absolute w-9 top-0 left-0 bottom-0 m-auto;
+}
+.icon-quote::before{
+  content: url('../public/assets/icons/icon-quote-accent.svg');  
+  @apply h-auto absolute w-9 top-0 left-0 right-0 bottom-0 m-auto;
+}
+
 
 
 
