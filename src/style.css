@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-  @apply font-Nunito text-mtls-color-text
+  @apply font-Nunito text-mtls-color-text;
   }
 }
 
@@ -310,28 +310,19 @@ p.error>label, p.custom_error>label{
   @apply mr-3;  
 }
 .icon{
-  position: relative;
-  padding-left: 50px;
+  position: relative;  
 }
 .icon-calendar::before{
   content: url('../public/assets/icons/calendar-icon.svg');        
-  width: 35px;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
+  @apply h-auto absolute w-9 top-0 left-0 bottom-0 m-auto;
 }
 .icon-location::before{
-  content: url('../public/assets/icons/location-icon.svg');
-  width: 35px;
-  height: auto;
-  position: absolute;        
-  top: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
+  content: url('../public/assets/icons/location-icon.svg');  
+  @apply h-auto absolute w-9 top-0 left-0 bottom-0 m-auto;
+}
+.icon-quote::before{
+  content: url('../public/assets/icons/icon-quote-accent.svg');  
+  @apply h-auto absolute w-9 top-0 left-0 right-0 bottom-0 m-auto;
 }
 
 
