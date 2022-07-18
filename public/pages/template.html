@@ -31,6 +31,33 @@
         })(window, document, 'script', 'dataLayer', 'GTM-MTSJJX9');</script>
 
     <!-- End Google Tag Manager -->
+    <style>
+        .icon{
+            position: relative;
+            padding-left: 50px;
+        }
+        .icon-calendar::before{
+            content: url('../assets/icons/calendar-icon.svg');        
+            width: 35px;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .icon-location::before{
+            content: url('../assets/icons/location-icon.svg');
+        
+        width: 35px;
+        height: auto;
+        position: absolute;        
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        }
+    </style>
 </head>
 
 <body class="flex flex-col h-screen justify-between">
@@ -68,7 +95,8 @@
                 <h1 pardot-region="Title" pardot-region-type="simple"
                     class="mb-4 font-Metronic  text-headline-1 leading-tight">See Materialise at MECSPE</h1>
                 <div pardot-region="Time" class="text-lg mb-4" style="color:#5C94C5;">
-                    <p>June 9-11, 2022<br />Booth G25 - Bologna Fiere - Bologna, Italy</p>
+                    <p class="flex items-center icon icon-calendar"> June 9-11, 2022</p>
+                    <p class="flex items-center icon icon-location"> Booth G25 - Bologna Fiere - Bologna, Italy</p>
                 </div>
                 <div pardot-region="Main text" class="text-2xl leading-9 mb-6">
                     <p>Join us at this international manufacturing fair to discover innovations in the industry and
@@ -79,8 +107,8 @@
                 </div>
 
 
-                <p class="text-white"><a href="#" class="btn btn-regular" pardot-region="editable-link"
-                        pardot-region-type="link">Book a meeting with us</a></p>
+                <p onclick="toogleModal(event)" class="text-white"><a href="#" class="btn btn-regular register-link" pardot-region="editable-link"
+                        pardot-region-type="link" >Book a meeting with us</a></p>
             </div>
             <div id="main_image"
                 class="sm:col-start-1 md:col-start-7 sm:col-span-12 md:col-span-6 h-auto sm:row-start-1 col-start-1 col-span-12 row-start-1 flex justify-end ">
@@ -225,7 +253,7 @@
         <!--  Quote Block -->
         <section id="block-5" class=" md:py-16 py-8 bg-mtls-color-neutral-100 grid grid-cols-12">
             <div class="col-start-2 md:col-start-3 col-span-10 md:col-span-8 h-auto flex flex-col md:flex-row">
-                <div class="icon-quote mr-2 text-center md:text-left">icon-quote-accent</div>
+                <div class="icon-quote mr-2 text-center md:text-left w-auto"><img src="../assets/icons/icon-quote-accent.svg" alt="icon-quote-accent" class="my-0 mx-auto mb-4 w-auto md:w-40"></div>
                 <div>
                     <p class="text-2xl leading-9 text-mtls-color-text">
                         The main benefit of 3D printing for me is showing the individualized anatomy because in
@@ -291,7 +319,8 @@
 
                 </p>
                 <p onclick="toogleModal(event)" class="mt-8 w-full register text-white"><a href="javascript:void(0)"
-                        class=" btn btn-regular ">Register
+                        class=" btn btn-regular register-link" pardot-region="editable-register-link"
+                        pardot-region-type="link">Register
                         now</a></p>
             </div>
         </section>
