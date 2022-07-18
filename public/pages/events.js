@@ -1,10 +1,7 @@
 // modal functionality
 
-// toogleModal = (event) => {  
-//   document.getElementById("modal").classList.toggle("modal");
-// };
-
 const link = document.getElementsByClassName("register-link");
+console.log(link);
 Array.from(link).forEach(function(elem) {  
   elem.onclick = function(){    
     if(elem.href !== location.href){
