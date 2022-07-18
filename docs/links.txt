@@ -5,7 +5,7 @@ TEST
 <script data-ot-ignore src='https://raw.githack.com/MaterialiseAgency/pardot/pardot-test/public/pages/events.js'></script>
 <script data-ot-ignore src="https://raw.githack.com/MaterialiseAgency/pardot/pardot-test/public/translate.js"></script>
 <script data-ot-ignore
-        src="https://raw.githack.com/MaterialiseAgency/pardot/pardot-test/public/pages/seo_after_gtm.js"></script>  
+        src="https://raw.githack.com/MaterialiseAgency/pardot/pardot-test/public/pages/event-template-test.html"></script>  
 
 
 UAT
