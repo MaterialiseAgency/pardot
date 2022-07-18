@@ -1,0 +1,30 @@
+TEST
+<link rel="stylesheet" href="https://raw.githack.com/MaterialiseAgency/pardot/pardot-test/public/style.css">
+<script data-ot-ignore
+        src="https://raw.githack.com/MaterialiseAgency/pardot/pardot-test/public/pages/seo_before_gtm.js"></script>
+<script data-ot-ignore src='https://raw.githack.com/MaterialiseAgency/pardot/pardot-test/public/pages/events.js'></script>
+<script data-ot-ignore src="https://raw.githack.com/MaterialiseAgency/pardot/pardot-test/public/translate.js"></script>
+<script data-ot-ignore
+        src="https://raw.githack.com/MaterialiseAgency/pardot/pardot-test/public/pages/seo_after_gtm.js"></script>  
+
+
+UAT
+<link rel="stylesheet" href="https://raw.githack.com/MaterialiseAgency/pardot/pardot-uat/public/style.css">
+<script data-ot-ignore
+        src="https://raw.githack.com/MaterialiseAgency/pardot/pardot-uat/public/pages/seo_before_gtm.js"></script>
+<script data-ot-ignore src='https://raw.githack.com/MaterialiseAgency/pardot/pardot-uat/public/pages/events.js'></script>
+<script data-ot-ignore src="https://raw.githack.com/MaterialiseAgency/pardot/pardot-uat/public/translate.js"></script>
+<script data-ot-ignore
+        src="https://raw.githack.com/MaterialiseAgency/pardot/pardot-uat/public/pages/seo_after_gtm.js"></script>
+
+PRODUCTION
+<link rel="stylesheet" href="https://raw.githack.com/MaterialiseAgency/pardot/pardot-production/public/style.css">
+<script data-ot-ignore
+        src="https://raw.githack.com/MaterialiseAgency/pardot/pardot-production/public/pages/seo_before_gtm.js"></script>
+<script data-ot-ignore src='https://raw.githack.com/MaterialiseAgency/pardot/pardot-production/public/pages/events.js'></script>
+<script data-ot-ignore src="https://raw.githack.com/MaterialiseAgency/pardot/pardot-production/public/translate.js"></script>
+<script data-ot-ignore
+        src="https://raw.githack.com/MaterialiseAgency/pardot/pardot-production/public/pages/seo_after_gtm.js"></script>
+
+
+  
