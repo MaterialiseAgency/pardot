@@ -324,6 +324,19 @@ p.error>label, p.custom_error>label{
   content: url('../public/assets/icons/icon-quote-accent.svg');  
   @apply h-auto absolute w-9 top-0 left-0 right-0 bottom-0 m-auto;
 }
+.card-bg{
+  box-shadow:0 0 2px 0 rgba(37, 42, 49, 0.16);
+  @apply rounded-20;  
+}
+.icon-arrow-right::after{
+  content: url('../public/assets/icons/icon-arrow-right-long-default.svg');  
+  @apply absolute w-3 h-3 inline-block ml-2;
+}
+
+.hover-icon:hover .icon-arrow-right::after{
+  content: url('../public/assets/icons/icon-arrow-right-long-active.svg'); 
+  
+} 
 
 
 
