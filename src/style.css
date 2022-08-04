@@ -336,7 +336,22 @@ p.error>label, p.custom_error>label{
 .hover-icon:hover .icon-arrow-right::after{
   content: url('../public/assets/icons/icon-arrow-right-long-active.svg'); 
   
-} 
+}
+
+/* Thank you message */
+.thank-you h3{
+  @apply font-Metronic leading-tight text-headline-3 mb-5;
+}
+.thank-you p{
+  @apply mb-4;
+}
+.thank-you a{
+  @apply text-mtls-color-text-link hover:text-mtls-color-text-active mb-2;
+}
+.thank-you ul{
+  @apply list-disc ml-8;
+}
+
 
 
 
