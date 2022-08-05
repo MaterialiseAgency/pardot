@@ -1,5 +1,6 @@
 // add meta: page OG image
-const metaLinkOgImage = document.createElement("meta");
+let metaLinkOgImage = document.createElement("meta");
+
 metaLinkOgImage.setAttribute("property", "og:image");
 if (document.querySelector("#main_image img")) {
   const mainImageLink = document
