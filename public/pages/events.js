@@ -22,16 +22,16 @@ if (document.getElementsByClassName("register-link")) {
 }
 
 //redirect to the event page if no utm on register page
-if (
+/* if (
   window.location.href.includes("register") &&
-  !window.location.href.includes("crm_campaign")
+//  window.location.href.includes("crm_campaign")
 ) {
   let registerPageUrl = window.location.href;
   const getIndex = registerPageUrl.indexOf("register");
   const registerPageUTMSlice = registerPageUrl.slice(getIndex - 1);
   const eventPageURL = registerPageUrl.replace(registerPageUTMSlice, "");
   window.location.replace(eventPageURL);
-}
+} */
 
 //get url
 const url = window.location.href;
