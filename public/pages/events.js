@@ -27,10 +27,8 @@ if (
   !window.location.href.includes("crm_campaign")
 ) {
   let registerPageUrl = window.location.href;
-  console.log(registerPageUrl);
   const getIndex = registerPageUrl.indexOf("register");
   const registerPageUTMSlice = registerPageUrl.slice(getIndex - 1);
   const eventPageURL = registerPageUrl.replace(registerPageUTMSlice, "");
-  console.log(eventPageURL);
   window.location.replace(eventPageURL);
 }
