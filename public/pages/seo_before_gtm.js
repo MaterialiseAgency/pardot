@@ -6,21 +6,25 @@ document.getElementsByTagName("head")[0].appendChild(metaLinkUrl);
 
 // push the channel
 if (window.location.contains("/medical/")) {
+  console.log("medical");
   window.dataLayer.push({
     page: { ownerChannel: "Medical" },
   });
 }
 if (window.location.contains("/software/")) {
+  console.log("soft");
   window.dataLayer.push({
     page: { ownerChannel: "Software" },
   });
 }
 if (window.location.contains("/manufacturing/")) {
+  console.log("man");
   window.dataLayer.push({
     page: { ownerChannel: "Manufacturing" },
   });
 }
 if (window.location.contains("/corporate/")) {
+  console.log("corp");
   window.dataLayer.push({
     page: { ownerChannel: "Corporate" },
   });
