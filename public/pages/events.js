@@ -35,5 +35,7 @@ if (
 
 //get url
 const url = window.location.href;
-const input = document.querySelector(".crm_customer_url input");
-input.value = url;
+if (document.querySelector(".crm_customer_url input")) {
+  const input = document.querySelector(".crm_customer_url input");
+  input.value = url;
+}
