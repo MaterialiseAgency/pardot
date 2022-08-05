@@ -67,10 +67,9 @@
             <div class=" sm:col-start-2 md:col-start-2 sm:col-span-10 md:col-span-5 h-auto col-start-2 col-span-10">
                 <h1 pardot-region="Title" pardot-region-type="simple"
                     class="mb-4 font-Metronic  text-headline-1 leading-tight">See Materialise at MECSPE</h1>
-                <div pardot-region="Time" class="text-lg mb-4" style="color:#5C94C5;">
+                <div pardot-region="Time" class="text-lg mb-4 text-mtls-color-primary-400">
                     <p class="flex items-center icon icon-calendar pl-12"> June 9-11, 2022</p>
-                    <p class="flex items-center icon icon-location pl-12"> Booth G25 - Bologna Fiere - Bologna, Italy
-                    </p>
+                    <p class="flex items-center icon icon-location pl-12"> Booth G25 - Bologna Fiere - Bologna, Italy</p>
                 </div>
                 <div pardot-region="Main text" class="text-2xl leading-9 mb-6">
                     <p>Join us at this international manufacturing fair to discover innovations in the industry and
@@ -81,8 +80,8 @@
                 </div>
 
 
-                <p onclick="toogleModal(event)" class="text-white"><a href="" class="btn btn-regular register-link"
-                        pardot-region="editable-link" pardot-region-type="link">Book a meeting with us</a></p>
+                <p class="text-white" onclick="toogleModal(event)"><a href="#" class="btn btn-regular register-link" pardot-region="editable-link"
+                    pardot-region-type="link">Book a meeting with us</a></p>
             </div>
             <div id="main_image"
                 class="sm:col-start-1 md:col-start-7 sm:col-span-12 md:col-span-6 h-auto sm:row-start-1 col-start-1 col-span-12 row-start-1 flex justify-end ">
@@ -227,17 +226,16 @@
         <!--  Quote Block -->
         <section id="block-5" class=" md:py-16 py-8 bg-mtls-color-neutral-100 grid grid-cols-12">
             <div class="col-start-2 md:col-start-3 col-span-10 md:col-span-8 h-auto flex flex-col md:flex-row">
-                <div class="icon icon-quote text-center md:text-left w-auto mr-0 md:mr-2 pl-0 pt-12 md:pt-0 md:pl-12">
-                </div>
+                <div class="icon icon-quote text-center md:text-left w-auto mr-0 md:mr-2 pl-0 pt-12 md:pt-0 md:pl-12" ></div>
                 <div>
-                    <p class="text-2xl leading-9 text-mtls-color-text">
+                    <p class="text-2xl leading-9 text-mtls-color-text" pardot-region="Quote Block Text" pardot-region-type="basic">
                         The main benefit of 3D printing for me is showing the individualized anatomy because in
                         congenital heart disease, each anatomy is unique. And when we’re talking about operating and
                         doing complex procedures on patients, seeing and feeling that representation on a one-to-one
                         scale really means that we can plan the best procedure, plan the best and most appropriate
                         surgery, and make sure we minimize our errors in judgment.
                     </p>
-                    <p class="text-lg mt-8 text-mtls-color-text-weak"><span
+                    <p class="text-lg mt-8 text-mtls-color-text-weak" pardot-region="Quote Block Author" pardot-region-type="basic"><span
                             class="font-Nunito leading-5 font-weight-bold">Dr. Tarique Hussain</span><br />Pediatric
                         Cardiology, UT Southwestern</p>
                 </div>
@@ -246,19 +244,57 @@
         </section>
         <!-- End Quote Block -->
 
-        <!--  Quote Block -->
-        <section id="block-6" class=" md:my-16 my-8">
-            <div>
-                <h3> Our product demos</h3>
-                <div>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book.
-                </div>
+        <!--  Demo Block -->
+        <section id="block-6" class=" md:py-16 py-8 grid grid-cols-12">
+            <div class="col-start-2 col-span-10 h-auto">
+                <h2 class="mb-10 font-weight-light"> Our product demos</h2>
             </div>
+            
+            <div class="col-start-2 md:col-start-2 col-span-10 md:col-span-6 mb-10 text-lg" pardot-region="Demo Block Text" pardot-region-type="basic">
+                Come to booth 3108 and learn how to get the best out of CAD and mesh using 
+                Magics 26. You’ll also understand how our end-to-end, AM-native enterprise 
+                platform enables repeatability and greater connectivity in your production. 
+                Talk to our software experts — they’re ready to help you reach your 3DP goals.
+            </div>
+            <div class="col-start-2 col-span-10 ">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card-bg p-8" >
+                        <h3 class="pb-4" pardot-region="Card title-1" pardot-region-type="simple">Magics 26</h3>
+                        <p class="text-lg pb-4" pardot-region="Card text-1" pardot-region-type="simple">Discover the new Magics 26, combining CAD and mesh to offer best of both worlds</p>
+                        <p class="text-mtls-color-text-link hover:text-mtls-color-text-link-hover hover-icon"><a href="" class="icon icon-arrow-right" pardot-region="card-link-1" pardot-region-type="link">Book a meeting</a></p>
+                        <p class="text-mtls-color-text-link hover:text-mtls-color-text-link-hover hover-icon"><a href="" class="icon icon-arrow-right" pardot-region="card-link-2" pardot-region-type="link">Read more about this new release</a></p>
+                    </div>
+                    <div class="card-bg  p-8">
+                        <h3 class="pb-4" pardot-region="Card title-2" pardot-region-type="simple">Workflow Automation</h3>
+                        <p class="text-lg pb-4" pardot-region="Card text-2" pardot-region-type="simple">Learn more about Materialise’s API technology and workflow automation platform</p>
+                        <p class="text-mtls-color-text-link hover:text-mtls-color-text-link-hover hover-icon"><a href="" class="icon icon-arrow-right" pardot-region="card-link-3" pardot-region-type="link">Book a meeting</a></p>
+                        <p class="text-mtls-color-text-link hover:text-mtls-color-text-link-hover hover-icon"><a href="" class="icon icon-arrow-right" pardot-region="card-link-4" pardot-region-type="link">Read more about Workflow Automation</a></p>
+                    </div>
+                    <div class="card-bg  p-8">
+                        <h3 class="pb-4" pardot-region="Card title-3" pardot-region-type="simple">CO-AM Software Platform</h3>
+                        <p class="text-lg pb-4" pardot-region="Card text-3" pardot-region-type="simple">Optimize your serial manufacturing and ensure repeatability with the CO-AM software as an end user or co-develop on the platform as one of our partners.</p>
+                        <p class="text-mtls-color-text-link hover:text-mtls-color-text-link-hover hover-icon"><a href="" class="icon icon-arrow-right" pardot-region="card-link-5" pardot-region-type="link">Book a meeting</a></p>
+                        <p class="text-mtls-color-text-link hover:text-mtls-color-text-link-hover hover-icon"><a href="" class="icon icon-arrow-right" pardot-region="card-link-6" pardot-region-type="link">Read more about CO-AM</a></p>
+                    </div>
+                    <div class="card-bg  p-8">
+                        <h3 class="pb-4" pardot-region="Card title-4" pardot-region-type="simple">Storefront</h3>
+                        <p class="text-lg pb-4" pardot-region="Card text-4" pardot-region-type="simple">A cloud-based solution that covers the entire workflow from order to delivery, and facilitates effective communication throughout the process.</p>
+                        <p class="text-mtls-color-text-link hover:text-mtls-color-text-link-hover hover-icon"><a href="" class="icon icon-arrow-right" pardot-region="card-link-7" pardot-region-type="link">Book a meeting</a></p>
+                        <p class="text-mtls-color-text-link hover:text-mtls-color-text-link-hover hover-icon"><a href="" class="icon icon-arrow-right" pardot-region="card-link-8" pardot-region-type="link">Read more about Storefront</a></p>
+                    </div>
+                    <div class="card-bg  p-8">
+                        <h3 class="pb-4" pardot-region="Card title-5" pardot-region-type="simple">Process Tuner</h3>
+                        <p class="text-lg pb-4" pardot-region="Card text-5" pardot-region-type="simple">Automated & streamlined AM process development with Process Tuner.</p>
+                        <p class="text-mtls-color-text-link hover:text-mtls-color-text-link-hover hover-icon"><a href="" class="icon icon-arrow-right" pardot-region="card-link-9" pardot-region-type="link">Book a meeting</a></p>
+                        <p class="text-mtls-color-text-link hover:text-mtls-color-text-link-hover hover-icon"><a href="" class="icon icon-arrow-right" pardot-region="card-link-10" pardot-region-type="link">Read more about Process Tuner</a></p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
         </section>
-        <!-- End Quote Block -->
+        <!-- End Demo Block -->
 
 
         <!--  Experts Block -->
@@ -293,10 +329,10 @@
                     </span>
 
                 </p>
-                <p onclick="toogleModal(event)" class="mt-8 w-full register text-white"><a href=""
-                        class=" btn btn-regular register-link" pardot-region="editable-register-link"
-                        pardot-region-type="link">Register
-                        now</a></p>
+                <p onclick="toogleModal(event)" class="mt-8 w-full register text-white"><a href="javascript:void(0)"
+                    class=" btn btn-regular register-link"  pardot-region="editable-register-link"
+                    pardot-region-type="link">Register
+                    now</a></p>
             </div>
         </section>
         <!-- End Register Block -->
