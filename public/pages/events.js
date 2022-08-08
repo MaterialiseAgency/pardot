@@ -21,7 +21,7 @@ if (document.getElementsByClassName("register-link")) {
   });
 }
 
-//redirect to the event page if no utm on register page
+/*
 if (
   window.location.href.includes("register") &&
   !window.location.href.includes("crm_campaign")
@@ -31,7 +31,7 @@ if (
   const registerPageUTMSlice = registerPageUrl.slice(getIndex - 1);
   const eventPageURL = registerPageUrl.replace(registerPageUTMSlice, "");
   window.location.replace(eventPageURL);
-}
+}*/
 
 //get url
 const url = window.location.href;
