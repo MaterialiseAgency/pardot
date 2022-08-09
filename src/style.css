@@ -24,9 +24,12 @@
 
 @font-face {
   font-family: 'Metronic Pro Regular';
-  src: url('./fonts/MetronicPro/MetronicProRegular.woff2') format('woff2'),
+  /* src: url('./fonts/MetronicPro/MetronicProRegular.woff2') format('woff2'),
       url('/fonts/MetronicPro/MetronicProRegular.woff') format('woff'),
-      url('/fonts/MetronicPro/MetronicProRegular.ttf') format('truetype');
+      url('/fonts/MetronicPro/MetronicProRegular.ttf') format('truetype'); */
+      src: url('https://go.materialise.com/l/901661/2022-08-08/fpp35/901661/1659973455bmDZNyVW/MetronicProRegular.bc45154f.woff2') format('woff2'),
+      url('	https://go.materialise.com/l/901661/2022-08-08/fpp32/901661/1659973430nknv0310/MetronicProRegular.b3882ee4.woff') format('woff'),
+      url('https://go.materialise.com/l/901661/2022-08-08/fpp2y/901661/1659973372CAHaW6mt/MetronicProRegular.1ddf132e.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
