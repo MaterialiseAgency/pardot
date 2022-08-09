@@ -118,13 +118,13 @@
     }
     /* headings */
     .text-headline-1 {
-      @apply  text-size-900 font-weight-light leading-line-height-2 tracking-letter-spacing-neg-2;
+      @apply  text-size-900 font-normal leading-line-height-2 tracking-letter-spacing-neg-2;
     }
     .text-headline-1-with-subtitle {
       @apply text-headline-1 font-weight-semibold;
     }
     .text-headline-2 {
-      @apply  text-size-800 font-weight-light leading-line-height-2 tracking-letter-spacing-neg-2;
+      @apply  text-size-800 font-weight-regular leading-line-height-2 tracking-letter-spacing-neg-2;
     }
     .text-headline-2-with-subtitle {
       @apply text-headline-2 font-weight-semibold;
@@ -164,13 +164,13 @@
 
 
 h1, .text-headline-1 {
-  @apply font-Roboto leading-tight;
+  @apply font-Roboto leading-tight font-weight-regular;
 }
 h2 {
-  @apply font-Roboto leading-tight text-headline-2;
+  @apply font-Roboto leading-tight text-headline-2 font-normal;
 }
 h3 {
-  @apply font-Roboto leading-tight text-headline-3;
+  @apply font-Roboto leading-tight text-headline-3 font-normal;
 }
 
 .newsletter_form_title{
@@ -252,7 +252,7 @@ p.error>label, p.custom_error>label{
 /* buttons style */
 
 .btn {
-	@apply cursor-pointer font-Nunito font-semibold leading-none text-center rounded-md outline-none
+	@apply cursor-pointer font-Roboto font-semibold leading-none text-center rounded-md outline-none
 }
 
 .btn-primary {
