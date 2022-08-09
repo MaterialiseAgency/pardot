@@ -164,13 +164,13 @@
 
 
 h1, .text-headline-1 {
-  @apply font-Metronic leading-tight;
+  @apply font-Roboto leading-tight;
 }
 h2 {
-  @apply font-Metronic leading-tight text-headline-2;
+  @apply font-Roboto leading-tight text-headline-2;
 }
 h3 {
-  @apply font-Metronic leading-tight text-headline-3;
+  @apply font-Roboto leading-tight text-headline-3;
 }
 
 .newsletter_form_title{
@@ -355,7 +355,7 @@ p.error>label, p.custom_error>label{
 
 /* Thank you message */
 .thank-you h3{
-  @apply font-Metronic leading-tight text-headline-3 mb-5;
+  @apply font-Roboto leading-tight text-headline-3 mb-5;
 }
 .thank-you p{
   @apply mb-4;
