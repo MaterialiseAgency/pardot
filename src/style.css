@@ -10,6 +10,18 @@
   }
 }
 
+
+@-moz-document url-prefix() {
+  @font-face {
+    font-family: 'Metronic Pro Regular';
+    src: url('./fonts/MetronicPro/MetronicProRegular.woff2') format('woff2'),
+        url('/fonts/MetronicPro/MetronicProRegular.woff') format('woff'),
+        url('/fonts/MetronicPro/MetronicProRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
 @font-face {
   font-family: 'Metronic Pro Regular';
   /* src: url('./fonts/MetronicPro/MetronicProRegular.woff2') format('woff2'),

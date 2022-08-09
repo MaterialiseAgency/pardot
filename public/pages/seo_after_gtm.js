@@ -11,4 +11,11 @@ if (document.querySelector("#main_image img")) {
   }
 }
 
-// seo_before_gtm.js
+//form submit track
+if (document.getElementById("pardot-form")) {
+  function submitGTM(event) {
+    window.dataLayer.push({ event: "PardotFormSubmit" });
+  }
+  const form = document.getElementById("pardot-form");
+  form.addEventListener("submit", submitGTM);
+}
