@@ -12,21 +12,21 @@ if (window.location.href.indexOf("/medical/") > -1) {
     page: { ownerChannel: "Medical" },
   });
 }
-if (window.location.href.indexOf("/software/")) {
+if (window.location.href.indexOf("/software/") > -1) {
   window.dataLayer = window.dataLayer || [];
   console.log("Software");
   window.dataLayer.push({
     page: { ownerChannel: "Software" },
   });
 }
-if (window.location.href.indexOf("/manufacturing/")) {
+if (window.location.href.indexOf("/manufacturing/") > -1) {
   window.dataLayer = window.dataLayer || [];
   console.log("Manufacturing");
   window.dataLayer.push({
     page: { ownerChannel: "Manufacturing" },
   });
 }
-if (window.location.href.indexOf("/corporate/")) {
+if (window.location.href.indexOf("/corporate/") > -1) {
   window.dataLayer = window.dataLayer || [];
   console.log("Corporate");
   window.dataLayer.push({
