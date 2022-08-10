@@ -10,12 +10,3 @@ if (document.querySelector("#main_image img")) {
     document.getElementsByTagName("head")[0].appendChild(metaLinkOgImage);
   }
 }
-
-//form submit track
-if (document.getElementById("pardot-form")) {
-  function submitGTM(event) {
-    window.dataLayer.push({ event: "PardotFormSubmit" });
-  }
-  const form = document.getElementById("pardot-form");
-  form.addEventListener("submit", submitGTM);
-}
