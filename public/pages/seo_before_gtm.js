@@ -6,25 +6,25 @@ document.getElementsByTagName("head")[0].appendChild(metaLinkUrl);
 
 // push the channel
 if (window.location.href.indexOf("/medical/") > -1) {
-  console.log("medical");
+  window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     page: { ownerChannel: "Medical" },
   });
 }
-if (window.location.href.indexOf("/software/")) {
-  console.log("soft");
+if (window.location.href.indexOf("/software/") > -1) {
+  window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     page: { ownerChannel: "Software" },
   });
 }
-if (window.location.href.indexOf("/manufacturing/")) {
-  console.log("man");
+if (window.location.href.indexOf("/manufacturing/") > -1) {
+  window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     page: { ownerChannel: "Manufacturing" },
   });
 }
-if (window.location.href.indexOf("/corporate/")) {
-  console.log("corp");
+if (window.location.href.indexOf("/corporate/") > -1) {
+  window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     page: { ownerChannel: "Corporate" },
   });

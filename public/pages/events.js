@@ -39,3 +39,26 @@ if (document.querySelector(".crm_customer_url input")) {
   const input = document.querySelector(".crm_customer_url input");
   input.value = url;
 }
+
+//Speakers
+const names= document.getElementsByClassName('name');
+let speakersArray=[];
+const speaker_link = document.querySelectorAll('.speaker-image img');
+const speaker_initials = document.querySelectorAll('.speaker-image span');
+
+for (let i=0; i<names.length; i++){  
+  const speakerInitialsArray = names[i].innerText.split(' ');
+  const speakerInitials = (
+    speakerInitialsArray[0].slice(0, 1) +
+    (speakerInitialsArray[1]
+      ? speakerInitialsArray[1].slice(0, 1)
+      : speakerInitialsArray[0].slice(1, 2))
+  ).toUpperCase();  
+  
+  if(speaker_link[i].getAttribute('src') == "" || null){
+    speaker_link[i].style.display="none";    
+    speaker_initials[i].innerText=speakerInitials;
+  }
+}
+
+
