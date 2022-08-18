@@ -372,7 +372,7 @@ p.error>label, p.custom_error>label{
   width: 101px;
   height: 101px;
 }
-.blue-link{
+section a:not(.btn){
   @apply text-mtls-color-text-link hover:text-mtls-color-text-link-hover;
 }
 
