@@ -367,6 +367,15 @@ p.error>label, p.custom_error>label{
   @apply list-disc ml-8;
 }
 
+/* Speakers */
+.speaker-image{
+  width: 101px;
+  height: 101px;
+}
+section a:not(.btn){
+  @apply text-mtls-color-text-link hover:text-mtls-color-text-link-hover;
+}
+
 
 
 
