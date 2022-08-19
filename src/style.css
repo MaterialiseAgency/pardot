@@ -10,11 +10,26 @@
   }
 }
 
+
+@-moz-document url-prefix() {
+  @font-face {
+    font-family: 'Metronic Pro Regular';
+    src: url('./fonts/MetronicPro/MetronicProRegular.woff2') format('woff2'),
+        url('/fonts/MetronicPro/MetronicProRegular.woff') format('woff'),
+        url('/fonts/MetronicPro/MetronicProRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
 @font-face {
   font-family: 'Metronic Pro Regular';
-  src: url('./fonts/MetronicPro/MetronicProRegular.woff2') format('woff2'),
+  /* src: url('./fonts/MetronicPro/MetronicProRegular.woff2') format('woff2'),
       url('/fonts/MetronicPro/MetronicProRegular.woff') format('woff'),
-      url('/fonts/MetronicPro/MetronicProRegular.ttf') format('truetype');
+      url('/fonts/MetronicPro/MetronicProRegular.ttf') format('truetype'); */
+      src: url('https://go.materialise.com/l/901661/2022-08-08/fpp35/901661/1659973455bmDZNyVW/MetronicProRegular.bc45154f.woff2') format('woff2'),
+      url('	https://go.materialise.com/l/901661/2022-08-08/fpp32/901661/1659973430nknv0310/MetronicProRegular.b3882ee4.woff') format('woff'),
+      url('https://go.materialise.com/l/901661/2022-08-08/fpp2y/901661/1659973372CAHaW6mt/MetronicProRegular.1ddf132e.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -103,13 +118,13 @@
     }
     /* headings */
     .text-headline-1 {
-      @apply  text-size-900 font-weight-light leading-line-height-2 tracking-letter-spacing-neg-2;
+      @apply  text-size-900 font-normal leading-line-height-2 tracking-letter-spacing-neg-2;
     }
     .text-headline-1-with-subtitle {
       @apply text-headline-1 font-weight-semibold;
     }
     .text-headline-2 {
-      @apply  text-size-800 font-weight-light leading-line-height-2 tracking-letter-spacing-neg-2;
+      @apply  text-size-800 font-weight-regular leading-line-height-2 tracking-letter-spacing-neg-2;
     }
     .text-headline-2-with-subtitle {
       @apply text-headline-2 font-weight-semibold;
@@ -149,13 +164,13 @@
 
 
 h1, .text-headline-1 {
-  @apply font-Metronic leading-tight;
+  @apply font-Roboto leading-tight font-weight-regular;
 }
 h2 {
-  @apply font-Metronic leading-tight text-headline-2;
+  @apply font-Roboto leading-tight text-headline-2 font-normal;
 }
 h3 {
-  @apply font-Metronic leading-tight text-headline-3;
+  @apply font-Roboto leading-tight text-headline-3 font-normal;
 }
 
 .newsletter_form_title{
@@ -237,7 +252,7 @@ p.error>label, p.custom_error>label{
 /* buttons style */
 
 .btn {
-	@apply cursor-pointer font-Nunito font-semibold leading-none text-center rounded-md outline-none
+	@apply cursor-pointer font-Roboto font-semibold leading-none text-center rounded-md outline-none
 }
 
 .btn-primary {
@@ -340,7 +355,7 @@ p.error>label, p.custom_error>label{
 
 /* Thank you message */
 .thank-you h3{
-  @apply font-Metronic leading-tight text-headline-3 mb-5;
+  @apply font-Roboto leading-tight text-headline-3 mb-5;
 }
 .thank-you p{
   @apply mb-4;
@@ -350,6 +365,15 @@ p.error>label, p.custom_error>label{
 }
 .thank-you ul{
   @apply list-disc ml-8;
+}
+
+/* Speakers */
+.speaker-image{
+  width: 101px;
+  height: 101px;
+}
+section a:not(.btn){
+  @apply text-mtls-color-text-link hover:text-mtls-color-text-link-hover;
 }
 
 
