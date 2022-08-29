@@ -353,6 +353,10 @@ p.error>label, p.custom_error>label{
   
 }
 
+textarea{
+  @apply h-20
+}
+
 /* Thank you message */
 .thank-you h3{
   @apply font-Roboto leading-tight text-headline-3 mb-5;
