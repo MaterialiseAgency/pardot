@@ -380,6 +380,57 @@ section a:not(.btn){
   @apply text-mtls-color-text-link hover:text-mtls-color-text-link-hover;
 }
 
+/* Program */
+.tabs > label {
+  @apply inline-block border-b-2 border-solid border-transparent px-0 py-1 text-xl mr-3 font-semibold cursor-pointer;  
+ }
+ .tabs input[type="radio"] { @apply hidden; }
+ 
+.tabs input[type="radio"]:checked ~ .tabs label{
+  @apply text-mtls-color-primary-500  border-b-2 border-solid text-xl border-mtls-color-primary-500 font-semibold; 
+}
+#tab-content-1, #tab-content-2{
+	display: none;	
+}
+.tabs [id^="tab"]:checked + label {
+  @apply text-mtls-color-primary-500  border-b-2 border-solid text-xl border-mtls-color-primary-500 font-semibold; 
+}
+#tab1:checked ~ #tab-content-1,
+#tab2:checked ~ #tab-content-2
+{
+  display: block;
+}
+
+.tab-content tr, .tab-content table th{
+  line-height: 57px;
+  display: grid;
+  grid-template-columns: minmax(150px, 0.5fr) minmax(150px, 2fr) minmax(150px, 1fr);
+ 
+}
+@media(max-width:900px) {
+  .tab-content table thead{
+    display: none;
+  }
+  .tab-content tr, .tab-content table th{   
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    line-height: 32px;   
+  }
+}
+.tab-content table th{ 
+  background: #fff;  
+}
+.tab-content table td{
+  padding: 3px 5px;
+}
+.tab-content table td span, .tab-content table th span{
+  line-height: 32px;
+  display: inline-block;
+}
+
+.tab-content table tr:nth-child(2n+1){
+  background: #F7F8F9;
+}
+
 
 
 
