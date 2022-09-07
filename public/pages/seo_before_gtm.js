@@ -29,7 +29,7 @@ if (window.location.href.indexOf("/corporate/") > -1) {
     page: { ownerChannel: "Corporate" },
   });
 }
-if (window.location.href.indexOf("/Motion/") > -1) {
+if (window.location.href.indexOf("/motion/") > -1) {
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     page: { ownerChannel: "Motion" },
