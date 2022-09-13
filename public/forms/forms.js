@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //get url
-const url = window.location.href;
+const page_url = window.location.href;
 if (document.querySelector(".crm_customer_url input")) {
   const input = document.querySelector(".crm_customer_url input");
-  input.value = url;
+  input.value = page_url;
 }
