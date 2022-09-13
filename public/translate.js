@@ -5,16 +5,16 @@ function pardot_translate(language) {
       de: "Vorname",
       fr: "Prénom",
       it: "Nome",
-      ja: "名",
+      ja: "名（半角英字）",
       ko: "이름",
       es: "Nombre",
     },
     last_name: {
-      en: "Last Name",
+      en: "Last name",
       de: "Nachname",
       fr: "Nom",
       it: "Cognome",
-      ja: "姓",
+      ja: "姓（半角英字）",
       ko: "성",
       es: "Apellidos",
     },
@@ -45,6 +45,15 @@ function pardot_translate(language) {
       ko: "직위",
       es: "Cargo",
     },
+    country: {
+      en: "Сountry",
+      de: "Land",
+      fr: "État",
+      it: "Regione",
+      ja: "州",
+      ko: "주 (미국)",
+      es: "Región",
+    },
     state: {
       en: "State",
       de: "Bundesland",
@@ -64,7 +73,7 @@ function pardot_translate(language) {
       es: "Provincia",
     },
     zip: {
-      en: "zip",
+      en: "Zip",
       de: "Code postal",
       fr: "Postleitzahl",
       it: "Codice postale",
@@ -189,7 +198,7 @@ function pardot_translate(language) {
       ko: "회사 프로필을 선택하세요",
       es: "Seleccione el perfil de su empresa",
     },
-    MED_WF_Academic_Research_Education: {
+    /* MED_WF_Academic_Research_Education: {
       en: "I'm a:",
       de: "Ich bin:",
       fr: "Je suis :",
@@ -197,7 +206,7 @@ function pardot_translate(language) {
       ja: "私は、",
       ko: "현재 직책:",
       es: "Soy:",
-    },
+    },*/
     WF_MTN_Type_of_enquiry: {
       en: "What is your enquiry about?",
       de: "Worum geht es in Ihrer Anfrage?",
@@ -234,8 +243,46 @@ function pardot_translate(language) {
       ko: "귀하의 회사는 몇 대의 3D 프린터를 보유 중 또는 곧 보유할 계획인가요?",
       es: "¿Cuántas impresoras 3D tiene su empresa o planea tener en un futuro cercano?",
     },
+
+    WF_SOFT_Challenges: {
+      en: "What are the main challenges you are trying to address?",
+      de: "Was sinddie größten Herausforderungen, die Sie bewältigen möchten?",
+      fr: "Quels sont les principaux défis que vous essayez de relever ?",
+      it: "Quali sono le sfide principali che stai cercando di affrontare?",
+      ja: "主にどのような課題にお困りですか？",
+      ko: "해결하려는 주요 문제가무엇인가요?",
+      es: "¿Cuáles son las principales desafíos que intenta abordar?",
+    },
+    MED_Segment: {
+      en: "Field of interest",
+      de: "Interessengebiet",
+      fr: "Domaine d'intérêt",
+      it: "Campo di interesse",
+      ja: "興味のある分野",
+      ko: "관심 분야",
+      es: "Campo de interés",
+    },
+    Local_Last_Name: {
+      en: "Last name",
+      de: "",
+      fr: "",
+      it: "",
+      ja: "姓",
+      ko: "",
+      es: "",
+    },
+    Local_First_Name: {
+      en: "First name",
+      de: "",
+      fr: "",
+      it: "",
+      ja: "名",
+      ko: "",
+      es: "",
+    },
   };
 
+  Local_Last_Name;
   /* ,
     1: {
       en: "",
