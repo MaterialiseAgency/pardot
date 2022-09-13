@@ -198,15 +198,6 @@ function pardot_translate(language) {
       ko: "회사 프로필을 선택하세요",
       es: "Seleccione el perfil de su empresa",
     },
-    /* MED_WF_Academic_Research_Education: {
-      en: "I'm a:",
-      de: "Ich bin:",
-      fr: "Je suis :",
-      it: "Sono:",
-      ja: "私は、",
-      ko: "현재 직책:",
-      es: "Soy:",
-    },*/
     WF_MTN_Type_of_enquiry: {
       en: "What is your enquiry about?",
       de: "Worum geht es in Ihrer Anfrage?",
@@ -243,7 +234,6 @@ function pardot_translate(language) {
       ko: "귀하의 회사는 몇 대의 3D 프린터를 보유 중 또는 곧 보유할 계획인가요?",
       es: "¿Cuántas impresoras 3D tiene su empresa o planea tener en un futuro cercano?",
     },
-
     WF_SOFT_Challenges: {
       en: "What are the main challenges you are trying to address?",
       de: "Was sinddie größten Herausforderungen, die Sie bewältigen möchten?",
@@ -264,25 +254,33 @@ function pardot_translate(language) {
     },
     Local_Last_Name: {
       en: "Last name",
-      de: "",
-      fr: "",
-      it: "",
+      de: "Last name",
+      fr: "Last name",
+      it: "Last name",
       ja: "姓",
-      ko: "",
-      es: "",
+      ko: "Last name",
+      es: "Last name",
     },
     Local_First_Name: {
       en: "First name",
-      de: "",
-      fr: "",
-      it: "",
+      de: "First name",
+      fr: "First name",
+      it: "First name",
       ja: "名",
-      ko: "",
-      es: "",
+      ko: "First name",
+      es: "First name",
     },
   };
 
-  Local_Last_Name;
+  /* MED_WF_Academic_Research_Education: {
+      en: "I'm a:",
+      de: "Ich bin:",
+      fr: "Je suis :",
+      it: "Sono:",
+      ja: "私は、",
+      ko: "현재 직책:",
+      es: "Soy:",
+    },*/
   /* ,
     1: {
       en: "",
