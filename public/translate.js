@@ -145,7 +145,7 @@ function pardot_translate(language) {
       es: "¿Qué impresora(s) 3D está(n) utilizando o tiene(n) previsto utilizar?",
     },
     WF_MAN_Enquiry_type: {
-      en: "What is your enquiry about?",
+      en: "What is your inquiry about?",
       de: "Worum geht es in Ihrer Anfrage?",
       fr: "Quel est l'objet de votre demande ?",
       it: "Qual è l'oggetto della tua richiesta?",
@@ -199,7 +199,7 @@ function pardot_translate(language) {
       es: "Seleccione el perfil de su empresa",
     },
     WF_MTN_Type_of_enquiry: {
-      en: "What is your enquiry about?",
+      en: "What is your inquiry about?",
       de: "Worum geht es in Ihrer Anfrage?",
       fr: "Quel est l'objet de votre demande ?",
       it: "Qual è l'oggetto della tua richiesta?",
