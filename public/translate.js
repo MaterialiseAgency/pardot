@@ -28,13 +28,13 @@ function pardot_translate(language) {
       es: "Correo electrónico",
     },
     company: {
-      en: "Company/Organization/Hospital",
-      de: "Unternehmen/Organisation/Krankenhaus",
-      fr: "Entreprise/organisation/hôpital",
-      it: "Azienda/Organizzazione/Ospedale",
-      ja: "会社名／組織名／病院名",
-      ko: "회사/조직/병원",
-      es: "Empresa/Organización/Hospital",
+      en: "Organization",
+      de: "Organisation",
+      fr: "Organisation",
+      it: "Organizzazione",
+      ja: "組織名",
+      ko: "조직",
+      es: "Organización",
     },
     job_title: {
       en: "Job title",
@@ -145,7 +145,7 @@ function pardot_translate(language) {
       es: "¿Qué impresora(s) 3D está(n) utilizando o tiene(n) previsto utilizar?",
     },
     WF_MAN_Enquiry_type: {
-      en: "What is your enquiry about?",
+      en: "What is your inquiry about?",
       de: "Worum geht es in Ihrer Anfrage?",
       fr: "Quel est l'objet de votre demande ?",
       it: "Qual è l'oggetto della tua richiesta?",
@@ -199,7 +199,7 @@ function pardot_translate(language) {
       es: "Seleccione el perfil de su empresa",
     },
     WF_MTN_Type_of_enquiry: {
-      en: "What is your enquiry about?",
+      en: "What is your inquiry about?",
       de: "Worum geht es in Ihrer Anfrage?",
       fr: "Quel est l'objet de votre demande ?",
       it: "Qual è l'oggetto della tua richiesta?",
