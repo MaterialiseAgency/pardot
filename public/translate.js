@@ -272,26 +272,6 @@ function pardot_translate(language) {
     },
   };
 
-  /* MED_WF_Academic_Research_Education: {
-      en: "I'm a:",
-      de: "Ich bin:",
-      fr: "Je suis :",
-      it: "Sono:",
-      ja: "私は、",
-      ko: "현재 직책:",
-      es: "Soy:",
-    },*/
-  /* ,
-    1: {
-      en: "",
-      de: "",
-      fr: "",
-      it: "",
-      ja: "",
-      ko: "",
-      es: "",
-    },*/
-
   for (const [key] of Object.entries(labels)) {
     if (labels[`${key}`][`${language}`]) {
       document.querySelector(`.${key} label`)
@@ -299,5 +279,39 @@ function pardot_translate(language) {
             labels[`${key}`][`${language}`])
         : "";
     }
+  }
+
+  const map = new Map([
+    [
+      "Send message",
+      {
+        en: "First name",
+        de: "Nachricht senden", // deepl
+        fr: "Envoyer un message", // deepl
+        it: "Invia un messaggio", // deepl
+        ja: "メッセージを送る", // deepl
+        ko: "문자 보내", // deepl
+        es: "Enviar un mensaje", // deepl
+      },
+    ],
+    [
+      "Download",
+      {
+        en: "Download", // deepl
+        de: "Herunterladen", // deepl
+        fr: "Télécharger", // deepl
+        it: "Scaricare", // deepl
+        ja: "ダウンロード", // deepl
+        ko: "다운로드", // deepl
+        es: "Descargar", // deepl
+      },
+    ],
+  ]);
+  const pardot_submit_text = document.querySelector(
+    ".pardot-form-button"
+  ).value;
+  if (document.querySelector(".pardot-form-button")) {
+    document.querySelector(".pardot-form-button").value =
+      map.get(pardot_submit_text).language;
   }
 }
