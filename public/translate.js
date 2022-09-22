@@ -285,7 +285,7 @@ function pardot_translate(language) {
     [
       "Send message",
       {
-        en: "First name",
+        en: "Send message",
         de: "Nachricht senden", // deepl
         fr: "Envoyer un message", // deepl
         it: "Invia un messaggio", // deepl
@@ -297,7 +297,7 @@ function pardot_translate(language) {
     [
       "Download",
       {
-        en: "Download", // deepl
+        en: "Download",
         de: "Herunterladen", // deepl
         fr: "Télécharger", // deepl
         it: "Scaricare", // deepl
@@ -311,11 +311,11 @@ function pardot_translate(language) {
     ".pardot-form-button"
   ).value;
 
-  /* if (document.querySelector(".pardot-form-button")) {
+  if (
+    document.querySelector(".pardot-form-button") &&
+    map.get(pardot_submit_text)[`${language}`]
+  ) {
     document.querySelector(".pardot-form-button").value =
-      map.get(pardot_submit_text).language;
-  } */
-
-  console.log(document.querySelector(".pardot-form-button").value);
-  console.log(map.get(pardot_submit_text).language);
+      map.get(pardot_submit_text)[`${language}`];
+  }
 }
