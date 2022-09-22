@@ -306,6 +306,18 @@ function pardot_translate(language) {
         es: "Descargar", // deepl
       },
     ],
+    [
+      "Watch recording",
+      {
+        en: "Watch recording",
+        de: "Aufnahme beobachten", // deepl
+        fr: "Regarder l'enregistrement", // deepl
+        it: "Guarda la registrazione", // deepl
+        ja: "録画の視聴", // deepl
+        ko: "녹화 보기", // deepl
+        es: "Ver grabación", // deepl
+      },
+    ],
   ]);
   const pardot_submit_text = document.querySelector(
     ".pardot-form-button"
@@ -313,7 +325,7 @@ function pardot_translate(language) {
 
   if (
     document.querySelector(".pardot-form-button") &&
-    map.get(pardot_submit_text)[`${language}`]
+    map.get(pardot_submit_text)
   ) {
     document.querySelector(".pardot-form-button").value =
       map.get(pardot_submit_text)[`${language}`];
