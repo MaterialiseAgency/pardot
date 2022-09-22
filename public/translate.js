@@ -310,8 +310,12 @@ function pardot_translate(language) {
   const pardot_submit_text = document.querySelector(
     ".pardot-form-button"
   ).value;
-  if (document.querySelector(".pardot-form-button")) {
+
+  /* if (document.querySelector(".pardot-form-button")) {
     document.querySelector(".pardot-form-button").value =
       map.get(pardot_submit_text).language;
-  }
+  } */
+
+  console.log(document.querySelector(".pardot-form-button").value);
+  console.log(map.get(pardot_submit_text).language);
 }
