@@ -297,13 +297,13 @@ function pardot_translate(language) {
     [
       "Download",
       {
-        en: "Download",
-        de: "Herunterladen",
-        fr: "Télécharger",
-        it: "Scaricare",
-        ja: "ダウンロード",
-        ko: "다운로드",
-        es: "Descargar",
+        en: "Download", // deepl
+        de: "Herunterladen", // deepl
+        fr: "Télécharger", // deepl
+        it: "Scaricare", // deepl
+        ja: "ダウンロード", // deepl
+        ko: "다운로드", // deepl
+        es: "Descargar", // deepl
       },
     ],
   ]);
