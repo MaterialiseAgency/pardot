@@ -10,13 +10,13 @@ if (pardotTextareaFields) {
   }
 }
 
-const pardot_submit_text = document.querySelector(".pardot-form-button").value;
+let language = "fr";
 
 const map = new Map([
   [
     "Send message",
     {
-      en: "First name",
+      en: "Send message",
       de: "Nachricht senden", // deepl
       fr: "Envoyer un message", // deepl
       it: "Invia un messaggio", // deepl
@@ -29,17 +29,21 @@ const map = new Map([
     "Download",
     {
       en: "Download",
-      de: "Herunterladen",
-      fr: "Télécharger",
-      it: "Scaricare",
-      ja: "ダウンロード",
-      ko: "다운로드",
-      es: "Descargar",
+      de: "Herunterladen", // deepl
+      fr: "Télécharger", // deepl
+      it: "Scaricare", // deepl
+      ja: "ダウンロード", // deepl
+      ko: "다운로드", // deepl
+      es: "Descargar", // deepl
     },
   ],
 ]);
+const pardot_submit_text = document.querySelector(".pardot-form-button").value;
 
-if (document.querySelector(".pardot-form-button")) {
+if (
+  document.querySelector(".pardot-form-button") &&
+  map.get(pardot_submit_text)[`${language}`]
+) {
   document.querySelector(".pardot-form-button").value =
-    map.get(pardot_submit_text).fr;
+    map.get(pardot_submit_text)[`${language}`];
 }
