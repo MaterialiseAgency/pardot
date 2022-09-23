@@ -318,6 +318,18 @@ function pardot_translate(language) {
         es: "Ver grabación", // deepl
       },
     ],
+    [
+      "Download the whitepaper",
+      {
+        en: "Download the whitepaper",
+        de: "Whitepaper runterladen", // deepl
+        fr: "Téléchargez le livre blanc", // deepl
+        it: "Scarica il libro bianco", // deepl
+        ja: "ホワイトペーパーをダウンロード", // deepl
+        ko: "백서 다운로드", // deepl
+        es: "Descargar el libro blanco", // deepl
+      },
+    ],
   ]);
   const pardot_submit_text = document.querySelector(
     ".pardot-form-button"
