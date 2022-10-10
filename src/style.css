@@ -225,8 +225,8 @@ select{
 .value span label {
     @apply text-black ml-1;    
 }
-.form_after_content p a{
-    color: rgba(96,165,250, 1);
+.form_after_content p a{    
+    @apply text-mtls-color-text-link;
 }
 
 /* error style */
@@ -430,6 +430,13 @@ section a:not(.btn){
 .tab-content table tr:nth-child(2n+1){
   background: #F7F8F9;
 }
+
+
+.pd-checkbox .value{
+  display: flex;
+  flex-direction: column;
+} 
+
 
 
 
