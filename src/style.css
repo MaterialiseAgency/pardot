@@ -309,12 +309,12 @@ p.error>label, p.custom_error>label{
 
 /* Newsletter subscribe */
 .WF_XBU_Newsletter_subscribe{
-  @apply flex flex-row-reverse justify-start items-center;  
+  @apply flex flex-row-reverse justify-end items-center;  
 }
 .WF_XBU_Newsletter_subscribe label{
     color: rgba(107,114,128,1)!important;
     line-height: 1.625!important;
-    font-size: .75rem!important;
+    font-size: 0.875rem!important;
     font-weight: 400!important;
 }
 .WF_XBU_Newsletter_subscribe .value label{
@@ -322,7 +322,7 @@ p.error>label, p.custom_error>label{
   
 }
 .WF_XBU_Newsletter_subscribe .value span {
-  @apply mr-3;  
+  @apply mr-3;   
 }
 .icon{
   position: relative;  
@@ -435,7 +435,15 @@ section a:not(.btn){
 .pd-checkbox .value{
   display: flex;
   flex-direction: column;
+}
+
+.pd-checkbox .value span{
+  display: flex;  
 } 
+
+.pd-checkbox input[type="checkbox"]{
+  @apply w-5 h-5 inline-block mr-1;
+}
 
 
 
