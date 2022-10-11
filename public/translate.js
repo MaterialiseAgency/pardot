@@ -282,6 +282,15 @@ function pardot_translate(language) {
       ko: "다음 중 귀하의 회사를 가장 잘 설명하는 것은 무엇인가요?",
       es: "¿Cuál de estas opciones describe mejor a su empresa?",
     },
+    MTN_Profession: {
+      en: "Job title",
+      de: "Stellenbezeichnung",
+      fr: "Poste",
+      it: "Posizione",
+      ja: "役職",
+      ko: "직위",
+      es: "Cargo",
+    },
   };
 
 
@@ -1226,6 +1235,78 @@ function pardot_translate(language) {
         ja: "上記以外の職務内容",
         ko: "해당 없음",
         es: "Ninguno de las anteriores",
+      },
+    ],
+    [
+      "I want to get a demo",
+      {
+        en: "I want to get a demo",
+        de: "Ich möchte eine Demo erhalten",
+        fr: "Je veux avoir une démo",
+        it: "Desidero ricevere una demo",
+        ja: "デモを希望します",
+        ko: "데모 프로그램을 받고 싶습니다",
+        es: "Me gustaría conseguir una demo",
+      },
+    ],
+    [
+      "I would like to talk to sales",
+      {
+        en: "I would like to talk to sales",
+        de: "Ich würde gerne mit dem Vertrieb sprechen",
+        fr: "Je souhaiterais parler au service commercial",
+        it: "Vorrei parlare con il reparto vendite",
+        ja: "営業担当に相談したい",
+        ko: "영업부와 상담하고 싶습니다",
+        es: "Me gustaría hablar con el departamento de ventas",
+      },
+    ],
+    [
+      "I have another question",
+      {
+        en: "I have another question",
+        de: "Ich habe eine andere Frage",
+        fr: "J'ai une autre question",
+        it: "Ho un'altra domanda",
+        ja: "他の質問があります",
+        ko: "기타 문의 사항이 있습니다다",
+        es: "Tengo otra pregunta",
+      },
+    ],
+    [
+      "Hip",
+      {
+        en: "Hip",
+        de: "Hüfte",
+        fr: "Hanche",
+        it: "Anca",
+        ja: "股関節分野",
+        ko: "둔부",
+        es: "Cadera",
+      },
+    ],
+    [
+      "Osteotomy",
+      {
+        en: "Osteotomy",
+        de: "Osteotomie",
+        fr: "Ostéotomie",
+        it: "Osteotomia",
+        ja: "骨切り術",
+        ko: "골절술",
+        es: "Osteotomía",
+      },
+    ],
+    [
+      "Shoulder",
+      {
+        en: "Shoulder",
+        de: "Schulter",
+        fr: "Épaule",
+        it: "Spalla",
+        ja: "肩関節分野",
+        ko: "견각",
+        es: "Hombro",
       },
     ]
   ]);
