@@ -273,7 +273,20 @@ function pardot_translate(language) {
       ko: "First name",
       es: "First name",
     },
+    WF_MAN_Aero_company_type: {
+      en: "Which of these best describes your company ?",
+      de: "Welche der folgenden Aussagen beschreibt Ihr Unternehmen am besten?",
+      fr: "Quelles caractéristiques décrivent le mieux votre entreprise ?",
+      it: "Quale di questi descrive meglio la tua azienda?",
+      ja: "御社の業種に最も近いものをお選びください",
+      ko: "다음 중 귀하의 회사를 가장 잘 설명하는 것은 무엇인가요?",
+      es: "¿Cuál de estas opciones describe mejor a su empresa?",
+    },
   };
+
+
+
+
 
   for (const [key] of Object.entries(labels)) {
     if (labels[`${key}`][`${language}`]) {
@@ -433,6 +446,414 @@ function pardot_translate(language) {
         ja: "いいえ", // deepl
         ko: "아니", // deepl
         es: "No", // deepl
+      },
+    ],
+    [
+      "Abdominal",
+      {
+        en: "Abdominal",
+        de: "Abdominaler Bereich",
+        fr: "Abdominal",
+        it: "Addominale",
+        ja: "腹部領域",
+        ko: "복부",
+        es: "Abdominal",
+      },
+    ],
+    [
+      "Cardiovascular",
+      {
+        en: "Cardiovascular",
+        de: "Kardiovaskulär",
+        fr: "Cardiovasculaire",
+        it: "Cardiovascolare",
+        ja: "循環器領域",
+        ko: "심혈관",
+        es: "Cardiovascular",
+      },
+    ],
+    [
+      "Cranio-maxillofacial (CMF)",
+      {
+        en: "Cranio-maxillofacial (CMF)",
+        de: "Mund-, Kiefer- und Gesichtschirurgie (MKG)",
+        fr: "Crânio-maxillo-facial (CMF)",
+        it: "Cranio maxillo facciale (CMF)",
+        ja: "頭蓋顎顔面外科領域",
+        ko: "두개악안면(CMF)",
+        es: "Cráneo-maxilofacial (CMF)",
+      },
+    ],
+    [
+      "Dental",
+      {
+        en: "Dental",
+        de: "Dentalbranche",
+        fr: "Dentaire",
+        it: "Dentale",
+        ja: "歯科領域",
+        ko: "치과",
+        es: "Dental",
+      },
+    ],
+    [
+      "Education",
+      {
+        en: "Education",
+        de: "Bildungswesen",
+        fr: "Enseignement",
+        it: "Istruzione",
+        ja: "教育領域",
+        ko: "교육",
+        es: "Educación",
+      },
+    ],
+    [
+      "Gynaecology",
+      {
+        en: "Gynaecology",
+        de: "Gynäkologie",
+        fr: "Gynécologie",
+        it: "Ginecologia",
+        ja: "婦人科領域",
+        ko: "여성의학과",
+        es: "Ginecología",
+      },
+    ],
+    [
+      "Industrial computed tomography (CT)",
+      {
+        en: "Industrial computed tomography (CT)",
+        de: "Industrielle Computertomographie (CT)",
+        fr: "Tomodensitométrie",
+        it: "Tomografia industriale computerizzata (CT)",
+        ja: "産業用コンピュータ断層撮影装置（CT）",
+        ko: "산업용 컴퓨터 단층 촬영(CT)",
+        es: "Tomografía computarizada (TC) industrial",
+      },
+    ],
+    [
+      "Material science",
+      {
+        en: "Material science",
+        de: "Materialwissenschaft",
+        fr: "Science des matériaux",
+        it: "Scienza dei materiali",
+        ja: "材料科学分野",
+        ko: "재료 과학",
+        es: "Ciencia de los materiales",
+      },
+    ],
+    [
+      "Natural science",
+      {
+        en: "Natural science",
+        de: "Naturwissenschaft",
+        fr: "Sciences naturelles",
+        it: "Scienze naturali",
+        ja: "自然科学分野",
+        ko: "자연 과학",
+        es: "Ciencias naturales",
+      },
+    ],
+    [
+      "Orthopaedics",
+      {
+        en: "Orthopaedics",
+        de: "Orthopädie",
+        fr: "Orthopédie",
+        it: "Ortopedia",
+        ja: "整形外科領域",
+        ko: "정형외과",
+        es: "Ortopedia",
+      },
+    ],
+    [
+      "Prosthetics",
+      {
+        en: "Prosthetics",
+        de: "Prothesen",
+        fr: "Prothèses",
+        it: "Prostetica",
+        ja: "義肢装具領域",
+        ko: "보철",
+        es: "Prótesis",
+      },
+    ],
+    [
+      "Pulmonology",
+      {
+        en: "Pulmonology",
+        de: "Pulmologie",
+        fr: "Pneumologie",
+        it: "Pneumologia",
+        ja: "呼吸器領域",
+        ko: "호흡기학",
+        es: "Neumología",
+      },
+    ],
+    [
+      "Radiology",
+      {
+        en: "Radiology",
+        de: "Radiologie",
+        fr: "Radiologie",
+        it: "Radiologia",
+        ja: "放射線領域",
+        ko: "방사선과",
+        es: "Radiología",
+      },
+    ],
+    [
+      "Urology",
+      {
+        en: "Urology",
+        de: "Urologie",
+        fr: "Urologie",
+        it: "Urologia",
+        ja: "泌尿器領域",
+        ko: "비뇨기과",
+        es: "Urología",
+      },
+    ],
+    [
+      "Veterinary",
+      {
+        en: "Veterinary",
+        de: "Veterinärmedizin",
+        fr: "Médecine vétérinaire",
+        it: "Veterinaria",
+        ja: "獣医領域",
+        ko: "수의학",
+        es: "Veterinaria",
+      },
+    ],
+    [
+      "Aerospace",
+      {
+        en: "Aerospace",
+        de: "Luft- und Raumfahrt",
+        fr: "Aéronautique",
+        it: "Aerospaziale",
+        ja: "航空宇宙",
+        ko: "항공우주",
+        es: "Industria aeroespacial",
+      },
+    ],
+    [
+      "Architecture",
+      {
+        en: "Architecture",
+        de: "Architektur",
+        fr: "Architecture",
+        it: "Architettura",
+        ja: "建築",
+        ko: "농업",
+        es: "Arquitectura",
+      },
+    ],
+    [
+      "Art",
+      {
+        en: "Art",
+        de: "Kunst",
+        fr: "Art",
+        it: "Arte",
+        ja: "アート",
+        ko: "예술",
+        es: "Arte",
+      },
+    ],
+    [
+      "Automotive",
+      {
+        en: "Automotive",
+        de: "Automotive",
+        fr: "Automobile",
+        it: "Automotive",
+        ja: "自動車",
+        ko: "자동차",
+        es: "Sector automoción/motor",
+      },
+    ],
+    [
+      "Consumer goods",
+      {
+        en: "Consumer goods",
+        de: "Konsumgüter",
+        fr: "Biens de consommation",
+        it: "Beni di consumo",
+        ja: "コンシューマ製品",
+        ko: "소비재",
+        es: "Bienes de consumo",
+      },
+    ],
+    [
+      "Design bureau",
+      {
+        en: "Design bureau",
+        de: "Konstruktionsbüro",
+        fr: "Bureau d'étude",
+        it: "Ufficio di progettazione",
+        ja: "デザイン",
+        ko: "설계 사무소",
+        es: "Estudio de diseño",
+      },
+    ],
+    [
+      "Energy",
+      {
+        en: "Energy",
+        de: "Energie",
+        fr: "Énergie",
+        it: "Energia",
+        ja: "エネルギー", // deepl
+        ko: "에너지",
+        es: "Energía",
+      },
+    ],
+    [
+      "Oil & gas",
+      {
+        en: "Oil & gas",
+        de: "Öl & Gas",
+        fr: "Pétrole & gaz",
+        it: "Petrolio e gas",
+        ja: "石油・ガス",
+        ko: "오일 및 가스",
+        es: "Petróleo y gas",
+      },
+    ],
+    [
+      "Footwear",
+      {
+        en: "Footwear",
+        de: "Footwear",
+        fr: "Chaussures",
+        it: "Calzature",
+        ja: "フットウェア",
+        ko: "풋웨어",
+        es: "Calzado",
+      },
+    ],
+    [
+      "Eyewear",
+      {
+        en: "Eyewear", // deepl
+        de: "Brillen", // deepl
+        fr: "Lunettes", // deepl
+        it: "Occhiali da vista",
+        ja: "アイウェア", // deepl
+        ko: "안경", // deepl
+        es: "Gafas", // deepl
+      },
+    ],
+    [
+      "Food & beverages",
+      {
+        en: "Food & beverages", // deepl
+        de: "Speisen & Getränke", // deepl
+        fr: "Nourriture et boissons", // deepl
+        it: "Cibo e bevande", // deepl
+        ja: "飲食物", // deepl
+        ko: "음식 및 음료", // deepl
+        es: "Alimentos y bebidas", // deepl
+      },
+    ],
+    [
+      "HighTech equipment",
+      {
+        en: "HighTech equipment",
+        de: "HighTech-Ausstattung", // deepl
+        fr: "Équipements de haute technologie", // deepl
+        it: "Attrezzatura ad alta tecnologia", // deepl
+        ja: "ハイテク機器", // deepl
+        ko: "하이테크 장비", // deepl
+        es: "equipo de alta tecnología", // deepl
+      },
+    ],
+    [
+      "Medical technology",
+      {
+        en: "Medical technology",
+        de: "Medizinische Technologie", // deepl
+        fr: "Technologie médicale", // deepl
+        it: "Tecnologia medica", // deepl
+        ja: "医療技術", // deepl
+        ko: "의학 기술", // deepl
+        es: "Tecnología Medica", // deepl
+      },
+    ],
+    [
+      "Transport & heavy equipment",
+      {
+        en: "Transport & heavy equipment",
+        de: "Transport & schweres Gerät", // deepl
+        fr: "Transport & équipement lourd", // deepl
+        it: "Trasporti e attrezzature pesanti", // deepl
+        ja: "輸送および重機", // deepl
+        ko: "운송 및 중장비",  // deepl
+        es: "Transporte y equipo pesado", // deepl
+      },
+    ],
+    [
+      "",
+      {
+        en: "",
+        de: "",
+        fr: "",
+        it: "",
+        ja: "",
+        ko: "",
+        es: "",
+      },
+    ],
+    [
+      "",
+      {
+        en: "",
+        de: "",
+        fr: "",
+        it: "",
+        ja: "",
+        ko: "",
+        es: "",
+      },
+    ],
+    [
+      "",
+      {
+        en: "",
+        de: "",
+        fr: "",
+        it: "",
+        ja: "",
+        ko: "",
+        es: "",
+      },
+    ],
+    [
+      "",
+      {
+        en: "",
+        de: "",
+        fr: "",
+        it: "",
+        ja: "",
+        ko: "",
+        es: "",
+      },
+    ],
+    [
+      "",
+      {
+        en: "",
+        de: "",
+        fr: "",
+        it: "",
+        ja: "",
+        ko: "",
+        es: "",
       },
     ]
   ]);
