@@ -306,6 +306,23 @@ function pardot_translate(language) {
       ja: "3D造形工場をいくつ運営していますか？",
       ko: "운영하고 있는 3D 프린팅 관련 사이트는 몇 개인가요?",
       es: "¿Cuántos sitios relacionados con la impresión 3D tiene su empresa?",
+    }, WF_XBU_Newsletter_subscribe: {
+      en: "I want to receive updates and news from Materialise. I can unsubscribe at any time or change the types of communication I receive in the preference center.",
+      de: "Ich möchte Updates und Neuigkeiten von Materialise erhalten. Ich kann mich jederzeit abmelden oder die Art der mir zugesandten Informationen im Preference Center ändern.",
+      fr: "Je veux recevoir des mises à jour et des nouveautés Materialise. Je peux me désabonner à tout moment ou modifier les types de communication que je reçois dans le centre de préférences.",
+      it: "Desidero ricevere aggiornamenti e novità da Materialise. Posso annullare l'iscrizione in qualsiasi momento o modificare i tipi di comunicazione che ricevo nel centro preferenze.",
+      ja: "Materialiseからの最新情報やニュースを受け取る プリファレンスセンターで、メール購読を解除したり、受信する情報の種類をいつでも変更可能です。",
+      ko: "Materialise의 업데이트와 소식을 받고 싶습니다. 언제든지 수신을 거부하거나 기본 설정 센터에서 수신 유형을 변경할 수 있습니다.",
+      es: "Quiero recibir actualizaciones y noticias de Materialise. Puedo cancelar la suscripción en cualquier momento o cambiar los tipos de comunicación que recibo en el centro de preferencias.",
+    },
+    WF_MTN_Phits: {
+      en: "I would like to use phits for",
+      de: "Ich möchte phits verwenden für", // deepl
+      fr: "Je voudrais utiliser les phits pour", // deepl
+      it: "Vorrei utilizzare i phit per", // deepl
+      ja: "フィッツを使いたいのは", // deepl
+      ko: "나는 핏을 사용하고 싶다", // deepl
+      es: "Me gustaría utilizar phits para", // deepl
     }
   };
 
@@ -1721,6 +1738,42 @@ function pardot_translate(language) {
         es: "Empresa de dispositivos médicos",
       },
     ],
+    [
+      "Casual use",
+      {
+        en: "Casual use",
+        de: "Gelegentliche Nutzung", // deepl
+        fr: "Utilisation occasionnelle", // deepl
+        it: "Uso occasionale", // deepl
+        ja: "カジュアルユース", // deepl
+        ko: "캐주얼 사용", // deepl
+        es: "Uso ocasional", // deepl
+      },
+    ],
+    [
+      "Pain relief",
+      {
+        en: "Pain relief",
+        de: "Schmerzlinderung", // deepl
+        fr: "Soulagement de la douleur", // deepl
+        it: "Sollievo dal dolore", // deepl
+        ja: "痛みの緩和", // deepl
+        ko: "통증 완화", // deepl
+        es: "Alivio del dolor", // deepl
+      },
+    ],
+    [
+      "Sports",
+      {
+        en: "Sports",
+        de: "Sport", // deepl
+        fr: "Sports", // deepl
+        it: "Sport", // deepl
+        ja: "スポーツ", // deepl
+        ko: "스포츠", // deepl
+        es: "Deportes", // deepl
+      },
+    ]
   ]);
 
   const pardot_select = document.querySelectorAll("#pardot-form option");
@@ -1733,7 +1786,7 @@ function pardot_translate(language) {
     });
   }
 
-  const pardot_checkBoxes = document.querySelectorAll("#pardot-form input[type='checkbox'] label");
+  const pardot_checkBoxes = document.querySelectorAll("#pardot-form input label");
   if (pardot_checkBoxes) {
     pardot_select.forEach(element => {
       if (select_map.has(element.text)) {
