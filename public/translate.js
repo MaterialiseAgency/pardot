@@ -1786,12 +1786,13 @@ function pardot_translate(language) {
     });
   }
 
-  const pardot_checkBoxes = document.querySelectorAll("#pardot-form input label");
+  const pardot_checkBoxes = document.querySelectorAll("#pardot-form .value label");
   if (pardot_checkBoxes) {
-    pardot_select.forEach(element => {
-      if (select_map.has(element.text)) {
-        element.text = select_map.get(element.text)[`${language}`]
+    pardot_checkBoxes.forEach(element => {
+      if (select_map.has(element.textContent)) {
+        element.textContent = select_map.get(element.textContent)[`${language}`]
       }
     });
   }
+
 }
