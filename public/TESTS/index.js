@@ -135,8 +135,21 @@ const select_map = new Map([
       ko: "아니", // deepl
       es: "No", // deepl
     },
+  ],
+  [
+    "Fused",
+    {
+      en: "Fused deposition Modeling (FDM)", // deepl
+      de: "DE Fused deposition Modeling (FDM)", // deepl
+      fr: "Non", // deepl
+      it: "No", // deepl
+      ja: "いいえ", // deepl
+      ko: "아니", // deepl
+      es: "No", // deepl
+    },
   ]
 ]);
+
 
 
 
@@ -149,6 +162,22 @@ if (pardot_select) {
       element.text = select_map.get(element.text).de
     }
   });
+
+
+  const pardot_checkBoxes = document.querySelectorAll("#pardot-form .value label");
+  console.log(pardot_checkBoxes.length);
+  if (pardot_checkBoxes) {
+    pardot_checkBoxes.forEach(element => {
+      console.log(element.textContent);
+      if (select_map.has(element.textContent)) {
+        console.log(element.textContent);
+        console.log(select_map.get(element.textContent).de);
+
+        element.textContent = select_map.get(element.textContent).de
+      }
+    });
+  }
+
 
 }
 
