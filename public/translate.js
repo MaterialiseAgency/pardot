@@ -298,7 +298,15 @@ function pardot_translate(language) {
       ja: "職場は、",
       ko: "현재 직무:",
       es: "Trabajo en:",
-    },
+    }, WF_SOFT_3D_printing_sites: {
+      en: "How many 3D printing-related sites does your company operate?",
+      de: "Wie viele 3D-Druck-bezogene Websites betreibt Ihr Unternehmen?",
+      fr: "Combien de sites liés à l'impression 3D votre entreprise exploite-t-elle ?",
+      it: "Quanti centri di stampa 3D gestisce la tua azienda?",
+      ja: "3D造形工場をいくつ運営していますか？",
+      ko: "운영하고 있는 3D 프린팅 관련 사이트는 몇 개인가요?",
+      es: "¿Cuántos sitios relacionados con la impresión 3D tiene su empresa?",
+    }
   };
 
 
@@ -1664,10 +1672,58 @@ function pardot_translate(language) {
         ko: "기타",
         es: "Otra cosa",
       },
-    ]
+    ],
+    [
+      "Hospital: university or teaching center",
+      {
+        en: "Hospital: university or teaching center",
+        de: "Krankenhaus: Universität oder Lehrzentrum",
+        fr: "Hôpital : université ou centre d'enseignement",
+        it: "Ospedale: centro universitario o didattico",
+        ja: "病院：大学・教育機関",
+        ko: "병원: 대학 또는 교육 센터",
+        es: "Hospital: universitario o centro de enseñanza",
+      },
+    ],
+    [
+      "Hospital: regional center",
+      {
+        en: "Hospital: regional center",
+        de: "Krankenhaus: regionales Zentrum",
+        fr: "Hôpital : centre régional",
+        it: "Ospedale: centro regionale",
+        ja: "病院：地域医療センター",
+        ko: "병원: 지역 센터",
+        es: "Hospital: centro regional",
+      },
+    ],
+    [
+      "Hospital: private practice",
+      {
+        en: "Hospital: private practice",
+        de: "Krankenhaus: Privatpraxis",
+        fr: "Hôpital : cabinet privé",
+        it: "Ospedale: clinica privata",
+        ja: "病院：個人医院",
+        ko: "병원: 개인 진료",
+        es: "Hospital: consulta privada",
+      },
+    ],
+    [
+      "Medical device company",
+      {
+        en: "Medical device company",
+        de: "Unternehmen für Medizinprodukte",
+        fr: "Entreprise de dispositifs médicaux",
+        it: "Azienda di dispositivi medici",
+        ja: "医療機器会社",
+        ko: "의료 장치 회사",
+        es: "Empresa de dispositivos médicos",
+      },
+    ],
   ]);
 
-  const pardot_select = document.querySelectorAll("option");
+  const pardot_select = document.querySelectorAll("#pardot-form option");
 
   if (pardot_select) {
     pardot_select.forEach(element => {
@@ -1675,7 +1731,14 @@ function pardot_translate(language) {
         element.text = select_map.get(element.text)[`${language}`]
       }
     });
+  }
 
-
+  const pardot_checkBoxes = document.querySelectorAll("#pardot-form input[type='checkbox'] label");
+  if (pardot_checkBoxes) {
+    pardot_select.forEach(element => {
+      if (select_map.has(element.text)) {
+        element.text = select_map.get(element.text)[`${language}`]
+      }
+    });
   }
 }
