@@ -1773,8 +1773,34 @@ function pardot_translate(language) {
         ko: "스포츠", // deepl
         es: "Deportes", // deepl
       },
+    ],
+    [
+      "Profile",
+      {
+        en: "Profile",
+        de: "Profil", // deepl
+        fr: "Profil", // deepl
+        it: "Profilo", // deepl
+        ja: "プロフィール", // deepl
+        ko: "프로필", // deepl
+        es: "Perfil", // deepl
+      },
+    ],
+    [
+      "Professional",
+      {
+        en: "Professional",
+        de: "Professionell", // deepl
+        fr: "Professionnel", // deepl
+        it: "Professionale", // deepl
+        ja: "プロフェッショナル", // deepl
+        ko: "직업적인", // deepl
+        es: "Profesional", // deepl
+      },
     ]
   ]);
+
+
 
   const pardot_select = document.querySelectorAll("#pardot-form option");
 
