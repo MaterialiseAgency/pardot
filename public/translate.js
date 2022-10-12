@@ -1733,7 +1733,7 @@ function pardot_translate(language) {
     });
   }
 
-  const pardot_checkBoxes = document.querySelectorAll("#pardot-form label");
+  const pardot_checkBoxes = document.querySelectorAll("#pardot-form input[type='checkbox'] label");
   if (pardot_checkBoxes) {
     pardot_select.forEach(element => {
       if (select_map.has(element.text)) {
