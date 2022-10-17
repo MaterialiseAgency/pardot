@@ -1801,7 +1801,6 @@ function pardot_translate(language) {
   ]);
 
 
-
   const pardot_select = document.querySelectorAll("#pardot-form option");
 
   if (pardot_select) {
@@ -1820,5 +1819,42 @@ function pardot_translate(language) {
       }
     });
   }
+
+  // GDPR text
+  const gdpr_legitimate = {
+    en: `The personal data that you provide us will be used to process your request and/or registration and in accordance with our Privacy Notice. You can unsubscribe at any time or change the types of communication you receive in our preference center.`,
+    de: `Die von Ihnen zur Verfügung gestellten personenbezogenen Daten werden zur Bearbeitung Ihrer Anfrage bzw. Registrierung und in Übereinstimmung mit unserer <a href="/de/privacy-notice" target="_blank">Datenschutzrichtlinie</a> verwendet.`,
+    fr: `Les données personnelles que vous nous fournissez seront utilisées pour traiter votre demande et/ou votre inscription conformément à notre <a href="/fr/privacy-notice" target="_blank">Avis de confidentialité</a>.`,
+    it: `I dati personali che ci fornisci verranno utilizzati per gestire la tua richiesta e/o registrazione in conformità con la nostra <a href="/it/privacy-notice" target="_blank">Informativa sulla privacy</a>.`,
+    ja: `お客様より当社に提供いただく個人情報は、お客様からのリクエストおよび/または登録を当社の<a href="/en/privacy-notice" target="_blank">プライバシーに関する通知</a>に従って処理するために使用されます。`,
+    ko: `귀하가 제공하는 개인정보는 당사의 <a href="/en/privacy-notice" target="_blank">개인정보처리방침</a>에 따라 귀하의 요청 및/또는 등록을 처리하는 데 사용됩니다.`,
+    es: `Los datos personales que nos proporcione se utilizarán para procesar su solicitud o su registro, de conformidad con nuestro <a href="/es/privacy-notice" target="_blank">Aviso de Privacidad</a>.`,
+  }
+
+  const gdpr_none_legitimate = {
+    en: `The personal data that you provide us will only be used to process your request and/or registration in accordance with our Privacy Notice.*You can unsubscribe at any time or change the types of communication you receive in our preference center.`,
+    de: `Die von Ihnen zur Verfügung gestellten personenbezogenen Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage bzw. Registrierung in Übereinstimmung mit unserer <a href="/de/privacy-notice" target="_blank">Datenschutzrichtlinie</a> verwendet.<br>*In jeder E-Mail, die Sie von uns erhalten, finden Sie einen Link, über den Sie das Abonnement kündigen bzw. die Art der Kommunikation ändern können, die von unserer Seite aus erfolgt.`,
+    fr: `Les données personnelles que vous nous fournissez seront uniquement utilisées pour traiter votre demande et/ou votre inscription conformément à notre <a href=''/fr/privacy-notice'' target=''_blank''>Avis de confidentialité</a>.<br>*Vous trouverez dans tous les e-mails que nous vous enverrons un lien pour vous désabonner ou modifier les types de communications que vous recevez de notre part.`,
+    it: `I dati personali che ci fornisci verranno utilizzati esclusivamente per gestire la tua richiesta e/o registrazione in conformità con la nostra <a href=''/it/privacy-notice'' target=''_blank''>Informativa sulla privacy</a>. <br>*In ogni e-mail che ti invieremo troverai un link per annullare l''iscrizione o modificare il tipo di comunicazioni che ricevi da noi.`,
+    ja: `お客様より当社に提供いただく個人情報は、お客様からのリクエストおよび/または登録を当社の<a href="/en/privacy-notice" target="_blank">プライバシーに関する通知</a>に従って処理するためにのみ使用されます。<br>*当社から送信するメールには、いずれも配信を停止する、または当社から受信する情報のタイプを変更するためのリンクが含まれています。`,
+    ko: `귀하가 제공하는 개인정보는 당사의 <a href="/en/privacy-notice" target="_blank">개인정보처리방침</a>에 따라 귀하의 요청 및/또는 등록을 처리하는 데만 사용됩니다.<br>*당사가 귀하에게 발송하는 모든 이메일에는 구독 해지 또는 통신문의 유형 변경에 대한 링크를 찾아보실 수 있습니다.`,
+    es: `Los datos personales que nos proporcione se utilizarán únicamente para procesar su solicitud o su registro, de conformidad con nuestro <a href="/es/privacy-notice" target="_blank">Aviso de Privacidad</a>.<br>*En todos los correos electrónicos que le enviemos, encontrará un enlace donde poder cancelar la suscripción o modificar los tipos de comunicaciones que desee recibir.`,
+  }
+
+
+
+  const gdpr_legit_block = document.getElementById('gdpr-legitimate')
+  const gdpr_none_legit_block = document.getElementById('gdpr-none-legitimate')
+
+
+  if (gdpr_legit_block) {
+    gdpr_legit_block.innerHTML = language ? gdpr_legitimate[`${language}`] : gdpr_legitimate[`en`]
+  }
+
+  if (gdpr_none_legit_block) {
+    gdpr_none_legit_block.innerHTML = language ? gdpr_none_legitimate[`${language}`] : gdpr_none_legitimate[`en`]
+  }
+
+
 
 }
