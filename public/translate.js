@@ -390,6 +390,18 @@ function pardot_translate(language) {
         es: "Descargar el libro blanco", // deepl
       },
     ],
+    [
+      "Request trial access",
+      {
+        en: "Request trial access",
+        de: "Testversion anfordern", // deepl
+        fr: "Demander un essai", // deepl
+        it: "Richiedi l'accesso alla prova", // deepl
+        ja: "トライアルを申し込む", // deepl
+        ko: "평가판 요청", // deepl
+        es: "Solicitar prueba", // deepl
+      },
+    ],
   ]);
   const pardot_submit_text = document.querySelector(
     ".pardot-form-button"
