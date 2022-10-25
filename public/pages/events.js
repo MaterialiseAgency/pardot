@@ -56,7 +56,7 @@ if (names) {
         : speakerInitialsArray[0].slice(1, 2))
     ).toUpperCase();
 
-    if (speaker_link[i].getAttribute("src") == "" || null || "#") {
+    if (speaker_link[i].getAttribute("src") ==  "#" || null || "") {
       speaker_link[i].style.display = "none";
       speaker_initials[i].innerText = speakerInitials;
     }
