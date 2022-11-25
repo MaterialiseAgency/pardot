@@ -53,7 +53,7 @@ function pardot_translate(language) {
       de: "Land",
       fr: "État",
       it: "Regione",
-      ja: "州",
+      ja: "国",
       ko: "주 (미국)",
       es: "Región",
     },
@@ -116,7 +116,7 @@ function pardot_translate(language) {
       de: "Was sinddie größten Herausforderungen, die Sie bewältigen möchten?",
       fr: "Quels sont les principaux défis que vous essayez de relever ?",
       it: "Quali sono le sfide principali che stai cercando di affrontare?",
-      ja: "主にどのような課題にお困りですか？",
+      ja: "お問い合わせ内容",
       ko: "해결하려는 주요 문제가무엇인가요?",
       es: "¿Cuáles son las principales desafíos que intenta abordar?",
     },
@@ -349,7 +349,7 @@ function pardot_translate(language) {
         de: "Nachricht senden", // deepl
         fr: "Envoyer un message", // deepl
         it: "Invia un messaggio", // deepl
-        ja: "メッセージを送る", // deepl
+        ja: "送信", // deepl
         ko: "문자 보내", // deepl
         es: "Enviar un mensaje", // deepl
       },
