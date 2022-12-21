@@ -13,14 +13,14 @@ if (document.querySelector(".crm_customer_url input")) {
 }
 
 // text area line break fix
-const pardotTextareaFields = document.querySelectorAll("#pardot-form textarea");
+// const pardotTextareaFields = document.querySelectorAll("#pardot-form textarea");
 
-if (pardotTextareaFields) {
-  for (let i = 0; i < pardotTextareaFields.length; i++) {
-    pardotTextareaFields[i].onblur = function () {
-      const oldValue = pardotTextareaFields[i].value;
-      const newValue = oldValue.replace(/[\r\n]/gm, " ");
-      pardotTextareaFields[i].value = newValue;
-    };
-  }
-}
+// if (pardotTextareaFields) {
+//   for (let i = 0; i < pardotTextareaFields.length; i++) {
+//     pardotTextareaFields[i].onblur = function () {
+//       const oldValue = pardotTextareaFields[i].value;
+//       const newValue = oldValue.replace(/[\r\n]/gm, " ");
+//       pardotTextareaFields[i].value = newValue;
+//     };
+//   }
+// }
