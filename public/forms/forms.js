@@ -12,6 +12,14 @@ if (document.querySelector(".crm_customer_url input")) {
   input.value = page_url;
 }
 
+const form = document.getElementById('pardot-form');
+form.addEventListener('change', getFormValue);
+function getFormValue(e) {
+    e.preventDefault();
+    let email = form.querySelector('.email input').value;        
+    sessionStorage.setItem("email", email);
+}
+
 // text area line break fix
 // const pardotTextareaFields = document.querySelectorAll("#pardot-form textarea");
 

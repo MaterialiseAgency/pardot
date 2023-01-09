@@ -1802,12 +1802,12 @@ function pardot_translate(language) {
       "Professional",
       {
         en: "Professional",
-        de: "Professionell", // deepl
-        fr: "Professionnel", // deepl
-        it: "Professionale", // deepl
-        ja: "プロフェッショナル", // deepl
-        ko: "직업적인", // deepl
-        es: "Profesional", // deepl
+        de: "Professional", // deepl
+        fr: "Professional", // deepl
+        it: "Professional", // deepl
+        ja: "Professional", // deepl
+        ko: "Professional", // deepl
+        es: "Professional", // deepl
       },
     ]
   ]);
