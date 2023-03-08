@@ -157,7 +157,7 @@ function pardot_translate(language) {
       es: "¿De qué trata su consulta?",
     },
     WF_MAN_Comments: {
-      en: "Please describe your inquiry:",
+      en: "Please describe your request:",
       de: "Bitte beschreiben Sie Ihre Anfrage:",
       fr: "Veuillez décrire votre demande :",
       it: "Descrivi la tua richiesta:",
@@ -853,7 +853,7 @@ function pardot_translate(language) {
     [
       "eVTOL",
       {
-        en: "eVTOL-Unternehmen",
+        en: "eVTOL",
         de: "eVTOL",
         fr: "eVTOL",
         it: "eVTOL",

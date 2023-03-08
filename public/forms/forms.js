@@ -15,7 +15,7 @@ if (document.querySelector(".crm_customer_url input")) {
 const form = document.getElementById('pardot-form');
 form.addEventListener('change', getFormValue);
 function getFormValue(e) {
-    e.preventDefault();
+    //e.preventDefault();
     let email = form.querySelector('.email input').value;        
     sessionStorage.setItem("email", email);
 }

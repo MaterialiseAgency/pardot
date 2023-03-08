@@ -38,7 +38,7 @@ if (
 // if (document.querySelector(".crm_customer_url input")) {
 //   const input = document.querySelector(".crm_customer_url input");
 //   input.value = url;
-// }
+// } 
 
 //Speakers
 const names = document.getElementsByClassName("name");
