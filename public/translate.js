@@ -238,7 +238,7 @@ function pardot_translate(language) {
       es: "¿Cuántas impresoras 3D tiene su empresa o planea tener en un futuro cercano?",
     },
     WF_SOFT_Challenges: {
-      en: "What are the main challenges you are trying to address?",
+      en: "What are the main challenges you are facing?",
       de: "Was sinddie größten Herausforderungen, die Sie bewältigen möchten?",
       fr: "Quels sont les principaux défis que vous essayez de relever ?",
       it: "Quali sono le sfide principali che stai cercando di affrontare?",
@@ -350,7 +350,7 @@ function pardot_translate(language) {
         fr: "Envoyer un message", // deepl
         it: "Invia un messaggio", // deepl
         ja: "送信", // deepl
-        ko: "문자 보내", // deepl
+        ko: "문의하기", // deepl
         es: "Enviar un mensaje", // deepl
       },
     ],
