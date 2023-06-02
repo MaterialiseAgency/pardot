@@ -260,6 +260,8 @@ p.error>label, p.custom_error>label{
 }
 
 
+
+
 .btn-regular {
 	@apply text-base py-3 px-8 bg-mtls-color-text-link  md:inline block w-full;
 	line-height: 1;
