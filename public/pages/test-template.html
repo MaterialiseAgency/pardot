@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <base href="https://go.materialise.com">-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="%%description%%" />
+    <!--  <meta name="description" content="{Medical} Some fancy text" />-->
+    <meta property="og:site_name" content="Materialise" />
+    <meta property="og:title" content="%%title%%" />
+    <link rel="stylesheet" href="https://raw.githack.com/MaterialiseAgency/pardot/pardot-test/public/style.css">
+    <link rel="shortcut icon" type="image/png"
+        href="https://go.materialise.com/l/901661/2022-08-09/fptx5/901661/1660032159tWsySkFz/favicon_32x32.png"
+        sizes="32x32">
+    <link rel="shortcut icon" type="image/png"
+        href="https://go.materialise.com/l/901661/2022-08-09/fptx8/901661/1660032264Y2ybNYzF/favicon_16x16.png"
+        sizes="16x16">
+    <meta property="og:image" name="image"
+        content="https://storage.pardot.com/901661/1661859920sbkQ3k93/CMF_header.jpg">
+    
+    <title>%%title%%</title>
+    
+</head>
+
+<body class="flex flex-col h-screen justify-between">
+    
+    <!-- Main -->
+    <main class="mb-auto flex flex-col">
+
+        <div class="w-screen h-screen flex items-center justify-center">
+            <div onclick="toggleSlideover()" class="cursor-pointer px-5 py-2 text-sm border text-gray-500 hover:bg-gray-100 rounded border-gray-300">Toggle Slide-over</div>
+            
+            <div id="slideover-container" class="w-full h-full fixed inset-0 invisible">
+              
+                <div onclick="toggleSlideover()" id="slideover-bg" class="w-full h-full duration-500 ease-out transition-all inset-0 absolute bg-gray-900 opacity-0"></div>
+              
+                <div onclick="toggleSlideover()" id="slideover" class="w-96 bg-white h-full absolute right-0 duration-300 ease-out transition-all translate-x-full">
+                    <div class="absolute cursor-pointer text-gray-600 top-0 w-8 h-8 flex items-center justify-center right-0 mt-5 mr-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+
+    </main>
+    <!--End Main -->
+    
+    <!-- Modal -->
+    <script>function toggleSlideover(){
+        document.getElementById('slideover-container').classList.toggle('invisible');
+        document.getElementById('slideover-bg').classList.toggle('opacity-0');
+        document.getElementById('slideover-bg').classList.toggle('opacity-50');
+        document.getElementById('slideover').classList.toggle('translate-x-full');
+    }</script>
+
+   
+
+
+
+</body>
+
+</html>

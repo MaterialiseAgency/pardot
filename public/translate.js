@@ -1853,10 +1853,21 @@ function pardot_translate(language) {
     es: `Los datos personales que nos proporcione se utilizarán únicamente para procesar su solicitud o su registro, de conformidad con nuestro <a class="text-mtls-color-text-link" href="https://www.materialise.com/es/aviso-sobre-la-privacidad-de-los-datos" target="_blank">Aviso de Privacidad</a>.<br>*En todos los correos electrónicos que le enviemos, encontrará un enlace donde poder cancelar la suscripción o modificar los tipos de comunicaciones que desee recibir.`,
   }
 
+  const form_header = {
+    en: "Download the whitepaper",
+    de: "Whitepaper runterladen", // deepl
+    fr: "Téléchargez le livre blanc", // deepl
+    it: "Scarica il libro bianco", // deepl
+    ja: "ホワイトペーパーをダウンロード", // deepl
+    ko: "백서 다운로드", // deepl
+    es: "Descargar el libro blanco", // deepl
+  }
+
 
 
   const gdpr_legit_block = document.getElementById('gdpr-legitimate')
   const gdpr_none_legit_block = document.getElementById('gdpr-none-legitimate')
+  const form_header_block = document.getElementById('form_header')
 
 
   if (gdpr_legit_block) {
@@ -1865,6 +1876,10 @@ function pardot_translate(language) {
 
   if (gdpr_none_legit_block) {
     gdpr_none_legit_block.innerHTML = language ? gdpr_none_legitimate[`${language}`] : gdpr_none_legitimate[`en`]
+  }
+
+  if (form_header_block) {
+    form_header_block.innerHTML = language ? form_header[`${language}`] : form_header[`en`]
   }
 
 

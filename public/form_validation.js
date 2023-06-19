@@ -20,6 +20,7 @@ function Validate(element) {
 Validate("input");
 Validate("select");
 
+
 // text area line break fix
 const pardotTextareaFields = document.querySelectorAll("#pardot-form textarea");
 
