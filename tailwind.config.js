@@ -84,7 +84,7 @@ module.exports = {
         secondary_500: "#F0B323",
         "sub-text": "#4E5D6B",
         "color-primary-800": "#001D36",
-        "mtls-color-text": "#0D0E10",
+        "mtls-color-text": "#0D0D17",
         "mtls-color-text-weak": "#4E5D6B",
         "mtls-color-text-disabled": "#B3BAC3",
         "mtls-color-text-active": "#2953A6",
