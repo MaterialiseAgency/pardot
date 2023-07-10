@@ -87,7 +87,7 @@ module.exports = {
         "mtls-color-text": "#0D0D17",
         "mtls-color-text-weak": "#4E5D6B",
         "mtls-color-text-disabled": "#B3BAC3",
-        "mtls-color-text-active": "#2953A6",
+        "mtls-color-text-active": "#004684",
         "mtls-color-primary-900": "#000911",
         "mtls-color-primary-810": "#00182C",
         "mtls-color-primary-800": "#001D36",
