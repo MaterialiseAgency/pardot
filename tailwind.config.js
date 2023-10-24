@@ -1,5 +1,11 @@
-module.exports = {
-  purge: [],
+
+module.exports = { 
+  plugins: [
+  ],  
+  purge: [
+     './public/pages/form.html',
+  ],
+  content: [ './public/pages/**/*.{html,js}', './components/**/*.{html,js}' ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     // based on https://www.figma.com/file/7V2FWyKI6ACqpS3zPpuiyy/Grid?node-id=124%3A120
@@ -81,7 +87,7 @@ module.exports = {
         mat_gray_bold: "#8F8F8F",
       },
       colors: {
-        secondary_500: "#F0B323",
+        "secondary_500": "#F0B323",
         "sub-text": "#4E5D6B",
         "color-primary-800": "#001D36",
         "mtls-color-text": "#0D0D17",
@@ -197,5 +203,5 @@ module.exports = {
       textColor: ["active", "visited"],
     },
   },
-  plugins: [],
+ 
 };

@@ -1,11 +1,18 @@
 {
   "scripts": {
     "build-css": "npx tailwindcss -i ./src/style.css -o ./public/style.css --watch",
-    "build-min-css": "tailwindcss build public/style.css -o public/style_min.css --minify"
+    "build-min-css": "tailwindcss build public/style.css -o public/style_min.css --minify",
+    "prod-css": "postcss ./src/style.css -o  public/form_css.css"
+    
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.4",
+    "postcss": "^8.4.26",
+    "postcss-cli": "^10.1.0",
     "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "cssnano": "^6.0.1"
   }
 }

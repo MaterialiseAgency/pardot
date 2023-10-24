@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://raw.githack.com/MaterialiseAgency/pardot/pardot-production/public/style.css">
+</head>
+<body>
+    <form accept-charset="UTF-8" method="post" action="%%form-action-url%%" class="form grid grid-cols-12 gap-x-3 px-4 pl-0" id="pardot-form">
+        %%form-opening-general-content%%
+        
+        %%form-if-thank-you%%
+            %%form-javascript-focus%%
+            <div class="col-span-12 absolute top-0 bottom-0 left-0 right-0 m-auto">%%form-thank-you-content%%</div>
+            <div class="col-span-12">%%form-thank-you-code%%</div>
+        %%form-end-if-thank-you%%
+        
+        %%form-if-display-form%%
+        
+            %%form-before-form-content%%
+                <!--%%form-if-error%%-->
+                <!--	<span class="errors col-span-12 text-red-500 text-xs">Please correct the errors below:</span>-->
+                <!--%%form-end-if-error%%-->
+        
+                %%form-start-loop-fields%%
+                    <p class="mt-4 col-span-12 relative form-field %%form-field-css-classes%% %%form-field-class-type%% %%form-field-class-required%% %%form-field-class-hidden%% %%form-field-class-no-label%% %%form-field-class-error%% %%form-field-dependency-css%%">
+                        %%form-if-field-label%%
+                            <label class="field-label block m-0 text-base text-black font-semibold" for="%%form-field-id%%">%%form-field-label%%</label>
+                            
+                        %%form-end-if-field-label%%
+        
+                        %%form-field-input%%
+                        
+                        %%form-field-if-error%%
+                                <span class="error no-label relative text-red-500 text-xs">%%form-field-error-message%%</span>
+                            %%form-field-end-if-error%%
+                        
+                        %%form-if-field-description%%
+                            <span class="description">%%form-field-description%%</span>
+                        %%form-end-if-field-description%%
+                    </p>
+                    <!--<div id="error_for_%%form-field-id%%" style="display:none"></div>-->
+                
+                %%form-end-loop-fields%%
+        
+                %%form-spam-trap-field%%
+        
+                <!-- forces IE5-8 to correctly submit UTF8 content  -->
+                <input name="_utf8" type="hidden" value="&#9731;" />
+                
+                
+            <!-- 	<div class="text-size-100 text-gray-500 my-7 leading-relaxed col-span-12 form_after_content">%%form-after-form-content%%</div> -->
+                
+                <p class="submit my-7">
+                    <input class="pardot-form-button bg-mtls-color-primary-500 hover:bg-mtls-color-text-active visited:mtls-color-background-link-hover text-white text-center leading-6 px-6 py-2 font-semibold cursor-pointer rounded" type="submit" accesskey="s" value="%%form-submit-button-text%%" %%form-submit-disabled%%/>
+                </p>
+            
+        <p id="gdpr-legitimate" class="bg-mtls-color-secondary-500 text-size-100 text-gray-500 my-7 leading-relaxed col-span-12 form_after_content"></p> 
+        %%form-end-if-display-form%%
+        
+        %%form-javascript-link-target-top%%
+        </form>
+        <script>
+        
+            /*
+            No need for the popup
+        window.addEventListener('load', function() {
+            let message = { height: document.body.scrollHeight, width: document.body.scrollWidth };	
+        
+            // window.top refers to parent window
+            window.top.postMessage(message, "*");
+        }); */
+        </script>
+        <form method="get" action="%%search-action-url%%" class="form small_field thank-you" id="pardot-form">
+            <p class="full-width">
+                <input type="text" name="q" value="%%search-query%%" size="40" />
+                <input type="submit" value="Search" />
+            </p>
+        <h2>Search results for: %%search-query%%</h2>
+        
+        %%search-if-results%%
+            <ol start="%%search-result-start-position%%">
+                %%search-start-loop-results%%
+                <li>
+                    <strong><a href="%%search-result-url%%">%%search-result-title%%</a></strong><br/>
+                    %%search-result-description%%<br/>
+                    <em>%%search-result-url-abbreviation%%</em> %%search-result-file-size%% KB
+                </li>
+                %%search-end-loop-results%%
+            </ol>
+        
+            <p class="pager WF_XBU_Newsletter_subscribe">
+                <strong>
+                %%search-if-previous-page-available%%
+                <a href="%%search-previous-page-url%%">
+                    Previous (page %%search-previous-page-number%%)
+                </a>
+                %%search-else-previous-page-not-available%%
+                    Previous
+                %%search-end-if-previous-page-available%% |
+        
+                Page %%search-this-page-number%% of %%search-total-pages-number%% |
+        
+                %%search-if-next-page-available%%
+                    <a href="%%search-next-page-url%%">
+                    Next (page %%search-next-page-number%%)</a>
+                %%search-else-next-page-not-available%%
+                    Next
+                %%search-end-if-next-page-available%%
+                </strong>
+            </p>
+        %%search-else-no-results%%
+            %%search-no-results-content%%
+        %%search-end-if-results%%
+        </form>
+        
+</body>
+</html>
