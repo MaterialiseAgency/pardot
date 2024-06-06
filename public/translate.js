@@ -144,13 +144,13 @@ function pardot_translate(language) {
       zh: "电话",
     },
     WF_MED_Comments: {
-      en: "What are the main challenges you are trying to address?",
-      de: "Was sinddie größten Herausforderungen, die Sie bewältigen möchten?",
-      fr: "Quels sont les principaux défis que vous essayez de relever ?",
+      en: "How can we help you?",
+      de: "Wie können wir Ihnen helfen?​",
+      fr: "Comment pouvons-nous vous aider?​",
       it: "Quali sono le sfide principali che stai cercando di affrontare?",
       ja: "お問い合わせ内容",
       ko: "해결하려는 주요 문제가무엇인가요?",
-      es: "¿Cuáles son las principales desafíos que intenta abordar?",
+      es: "¿Como le podemos ayudar?​",
       zh: "您正试图解决的主要挑战是什么？",
     },
     WF_XBU_Contact_origin: {
@@ -393,7 +393,38 @@ function pardot_translate(language) {
       ko: "나는 핏을 사용하고 싶다", // deepl
       es: "Me gustaría utilizar phits para", // deepl
       zh: "我想用phits用于以下目的",
-    }
+    },
+
+    WF_SOFT_Subtitle_1: {
+    en: "Tell us more about your request",
+    de: "Erzählen Sie uns mehr über Ihr Anliegen",
+    fr: "Dites-nous en plus sur votre demande",
+    it: "Fornisci ulteriori dettagli sulla tua richiesta",
+    ja: "お問い合わせの内容について詳しくご説明ください。",
+    ko: "문의사항에 대해 조금 더 자세히 알려주세요",
+    es: "Cuéntanos más sobre tu solicitud",
+    zh: "告诉我们您的需求",
+   },
+    WF_SOFT_Subtitle_2: {
+      en: "Company information",
+      de: "Firmeninformation",
+      fr: "Informations sur la société",
+      it: "Informazioni sull'azienda",
+      ja: " 会社情報",
+      ko: "회사 정보",
+      es: "Información sobre la empresa",
+      zh: "公司信息",
+    },
+    WF_SOFT_Subtitle_3:{
+      en: "How can we contact you?",
+      de: "Wie können wir sie kontaktieren?",
+      fr: "Comment pouvons-nous vous contacter?",
+      it: "Indica il modo migliore per contattarti",
+      ja: "弊社よりご連絡を差し上げる際のコンタクト先をご記入ください。",
+      ko: "어떻게 연락드리면 될까요?",
+      es: "¿Cómo podemos contactarte?",
+      zh: "我们如何联系您？",
+    },
   };
 
 
@@ -442,7 +473,7 @@ function pardot_translate(language) {
       "Watch recording",
       {
         en: "Watch recording",
-        de: "Aufnahme beobachten", // deepl
+        de: "Aufzeichnung ansehen", // deepl
         fr: "Regarder l'enregistrement", // deepl
         it: "Guarda la registrazione", // deepl
         ja: "録画の視聴", // deepl
