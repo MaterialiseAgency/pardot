@@ -12,6 +12,7 @@ function pardot_translate(language) {
       ko: "이름",
       es: "Nombre",
       zh: "名",
+      pl: "Imię",
     },
     last_name: {
       en: "Last name",
@@ -22,6 +23,7 @@ function pardot_translate(language) {
       ko: "성",
       es: "Apellidos",
       zh: "姓",
+      pl: "Nazwisko",
     },
     email: {
       en: "Email",
@@ -32,6 +34,7 @@ function pardot_translate(language) {
       ko: "이메일",
       es: "Correo electrónico",
       zh: "电子邮件",
+      pl: "E-mail",
     },
     company: {
       en: "Organization",
@@ -42,6 +45,7 @@ function pardot_translate(language) {
       ko: "조직",
       es: "Organización",
       zh: "单位",
+      pl: "Organizacja"
     },
     job_title: {
       en: "Job title",
@@ -52,6 +56,7 @@ function pardot_translate(language) {
       ko: "직위",
       es: "Cargo",
       zh: "职务",
+      pl: "Job title",
     },
     country: {
       en: "Сountry",
@@ -62,6 +67,7 @@ function pardot_translate(language) {
       ko: "주 (미국)",
       es: "Región",
       zh: "国家",
+      pl: "Kraj",
     },
     state: {
       en: "State",
@@ -72,6 +78,7 @@ function pardot_translate(language) {
       ko: "주 (미국)",
       es: "Región",
       zh: "州",
+      pl: "State",
     },
     Province: {
       en: "Province",
@@ -82,6 +89,7 @@ function pardot_translate(language) {
       ko: "주 (캐나다)",
       es: "Provincia",
       zh: "省",
+      pl: "Province",
     },
     zip: {
       en: "Zip",
@@ -92,6 +100,7 @@ function pardot_translate(language) {
       ko: "우편 번호",
       es: "Código postal",
       zh: "邮编",
+      pl: "Zip",
     },
     address_one:{
       en: "Address",
@@ -102,6 +111,7 @@ function pardot_translate(language) {
       ko: "주소",
       es: "Address",
       zh: "地址",
+      pl: "Address",
     },
     city:{
       en: "City",
@@ -112,6 +122,7 @@ function pardot_translate(language) {
       ko: "도시",
       es: "City",
       zh: "城市",
+      pl: "City",
     },   
     MED_WF_Field_of_Interest: {
       en: "Organization type",
@@ -122,6 +133,7 @@ function pardot_translate(language) {
       ko: "조직 유형",
       es: "Tipo de organización",
       zh: "单位类型",
+      pl: "Organization type",
     },
     WF_MED_Organization_Type_Other: {
       en: "Please specify:",
@@ -132,6 +144,7 @@ function pardot_translate(language) {
       ko: "다음을 지정:",
       es: "Especifique por favor:",
       zh: "请具体说明",
+      pl: "Please specify:",
     },
     phone: {
       en: "Phone ",
@@ -142,6 +155,7 @@ function pardot_translate(language) {
       ko: "전화",
       es: "Teléfono",
       zh: "电话",
+      pl: "Phone ",
     },
     WF_MED_Comments: {
       en: "How can we help you?",
@@ -152,6 +166,7 @@ function pardot_translate(language) {
       ko: "해결하려는 주요 문제가무엇인가요?",
       es: "¿Como le podemos ayudar?​",
       zh: "您正试图解决的主要挑战是什么？",
+      pl: "How can we help you?",
     },
     WF_XBU_Contact_origin: {
       en: "How did you hear about Materialise?",
@@ -162,6 +177,7 @@ function pardot_translate(language) {
       ko: "Materialise를 어떻게 알게 되었나요?",
       es: "¿Cómo conoció Materialise?",
       zh: "您是如何知道Materialise玛瑞斯的？",
+      pl: "How did you hear about Materialise?",
     },
     WF_SOFT_Technologies: {
       en: "What 3D printing technologies are you using/planning to use?",
@@ -172,6 +188,7 @@ function pardot_translate(language) {
       ko: "어떤 3D 프린팅 기술을 사용 중 또는 사용할 계획인가요?",
       es: "¿Qué tecnologías de impresión 3D utiliza o tiene previsto utilizar?",
       zh: "您正在使用/计划使用的3D打印技术有哪些？",
+      pl: "What 3D printing technologies are you using/planning to use?",
     },
     WF_SOFT_3D_Printer: {
       en: "Which 3D printer(s) are you using/planning to use?",
@@ -182,6 +199,7 @@ function pardot_translate(language) {
       ko: "어떤 3D 프린터를 사용 중 또는 사용할 계획인가요?",
       es: "¿Qué impresora(s) 3D está(n) utilizando o tiene(n) previsto utilizar?",
       zh: "您正在使用/计划使用的3D打印机是哪种(些)？",
+      pl: "Which 3D printer(s) are you using/planning to use?",
     },
     WF_MAN_Enquiry_type: {
       en: "What is your inquiry about?",
@@ -192,6 +210,7 @@ function pardot_translate(language) {
       ko: "무엇에 관한 문의인가요?",
       es: "¿De qué trata su consulta?",
       zh: "您需要询价的产品是什么？",
+      pl: "What is your inquiry about?",
     },
     WF_MAN_Comments: {
       en: "Please describe your request:",
@@ -202,6 +221,7 @@ function pardot_translate(language) {
       ko: "문의 사항을 설명:",
       es: "Describa su consulta por favor:",
       zh: "请描述您的要求",
+      pl: "Please describe your request:",
     },
     WF_MAN_Industry: {
       en: "Industry",
@@ -234,6 +254,7 @@ function pardot_translate(language) {
       ko: "직책",
       es: "Puesto de trabajo",
       zh: "所需功能",
+      pl: "Funtion",
     },
     WF_SOFT_Partner_profile: {
       en: "Please select your company profile",
@@ -244,6 +265,7 @@ function pardot_translate(language) {
       ko: "회사 프로필을 선택하세요",
       es: "Seleccione el perfil de su empresa",
       zh: "请选择您的公司简介",
+      pl: "Please select your company profile",
     },
     WF_MTN_Type_of_enquiry: {
       en: "What is your inquiry about?",
@@ -254,6 +276,7 @@ function pardot_translate(language) {
       ko: "무엇에 관한 문의인가요?",
       es: "¿De qué trata su consulta?",
       zh: "您需要询价的产品是什么？",
+      pl: "What is your inquiry about?",
     },
     WF_MTN_Comments: {
       en: "Please describe your inquiry:",
@@ -264,6 +287,7 @@ function pardot_translate(language) {
       ko: "문의 사항을 설명:",
       es: "Describa su consulta por favor:",
       zh: "请描述您的询价：",
+      pl: "Please describe your inquiry:",
     },
     Sector: {
       en: "Sector",
@@ -274,6 +298,7 @@ function pardot_translate(language) {
       ko: "분야",
       es: "Sector",
       zh: "所在部门",
+      pl: "Sector",
     },
     WF_SOFT_Number_of_printers: {
       en: "How many 3D printers does your company have/plan to have in the near future?",
@@ -284,6 +309,7 @@ function pardot_translate(language) {
       ko: "귀하의 회사는 몇 대의 3D 프린터를 보유 중 또는 곧 보유할 계획인가요?",
       es: "¿Cuántas impresoras 3D tiene su empresa o planea tener en un futuro cercano?",
       zh: "贵公司拥有/计划在不久的将来拥有多少台3D打印机？",
+      pl: "How many 3D printers does your company have/plan to have in the near future?",
     },
     WF_SOFT_Challenges: {
       en: "What are you hoping to achieve with our software?",
@@ -294,6 +320,7 @@ function pardot_translate(language) {
       ko: "저희 소프트웨어를 통해 달성하고자 하는 것이 무엇인가요?",
       es: "¿Qué esperas conseguir con nuestro software?",
       zh: "您希望用我们的软件实现什么？",
+      pl: "What are you hoping to achieve with our software?",
     },
     WF_SOFT_Course:{
       en: "Which course(s) would you like to use our software for?",
@@ -304,6 +331,7 @@ function pardot_translate(language) {
       ko: "어떤 과정에 저희 소프트웨어를 사용하고자 하시나요?",
       es: "¿Para qué curso(s) te gustaría utilizar nuestro software?",
       zh: "您想在什么课程中用我们的软件？",
+      pl: "Which course(s) would you like to use our software for?",
     },
     MED_Segment: {
       en: "What’s your field of work or interest?",
@@ -314,6 +342,7 @@ function pardot_translate(language) {
       ko: "관심 분야",
       es: "Campo de interés",
       zh: "感兴趣的领域",
+      pl: "What’s your field of work or interest?",
     },
     Local_Last_Name: {
       en: "Last name",
@@ -324,6 +353,7 @@ function pardot_translate(language) {
       ko: "Last name",
       es: "Last name",
       zh: "姓",
+      pl: "Nazwisko",
     },
     Local_First_Name: {
       en: "First name",
@@ -334,6 +364,7 @@ function pardot_translate(language) {
       ko: "First name",
       es: "First name",
       zh: "名",
+      pl: "Imię"
     },
     WF_MAN_Aero_company_type: {
       en: "Which of these best describes your company ?",
@@ -344,6 +375,7 @@ function pardot_translate(language) {
       ko: "다음 중 귀하의 회사를 가장 잘 설명하는 것은 무엇인가요?",
       es: "¿Cuál de estas opciones describe mejor a su empresa?",
       zh: "以下哪一项最能描述您的公司？",
+      pl: "Which of these best describes your company ?",
     },
     MTN_Profession: {
       en: "Profession",
@@ -354,6 +386,7 @@ function pardot_translate(language) {
       ko: "직위",
       es: "Cargo",
       zh: "职务",
+      pl: "Profession",
     }, 
     Business_Line: {
       en: "I work in:",
@@ -364,6 +397,7 @@ function pardot_translate(language) {
       ko: "현재 직무:",
       es: "Trabajo en:",
       zh: "我工作的领域是：",
+      pl: "I work in:",
     }, 
     WF_SOFT_3D_printing_sites: {
       en: "How many 3D printing-related sites does your company operate?",
@@ -374,7 +408,9 @@ function pardot_translate(language) {
       ko: "운영하고 있는 3D 프린팅 관련 사이트는 몇 개인가요?",
       es: "¿Cuántos sitios relacionados con la impresión 3D tiene su empresa?",
       zh: "贵公司运行多少个3D打印相关的工作站？",
-    }, WF_XBU_Newsletter_subscribe: {
+      pl: "How many 3D printing-related sites does your company operate?",
+    }, 
+    WF_XBU_Newsletter_subscribe: {
       en: "I want to receive updates and news from Materialise. I can unsubscribe at any time or change the types of communication I receive in the preference center.",
       de: "Ich möchte Updates und Neuigkeiten von Materialise erhalten. Ich kann mich jederzeit abmelden oder die Art der mir zugesandten Informationen im Preference Center ändern.",
       fr: "Je veux recevoir des mises à jour et des nouveautés Materialise. Je peux me désabonner à tout moment ou modifier les types de communication que je reçois dans le centre de préférences.",
@@ -383,6 +419,8 @@ function pardot_translate(language) {
       ko: "Materialise의 업데이트와 소식을 받고 싶습니다. 언제든지 수신을 거부하거나 기본 설정 센터에서 수신 유형을 변경할 수 있습니다.",
       es: "Quiero recibir actualizaciones y noticias de Materialise. Puedo cancelar la suscripción en cualquier momento o cambiar los tipos de comunicación que recibo en el centro de preferencias.",
       zh: "我希望收到来自Materialise玛瑞斯的信息更新和资讯。我可以在首选项中心随时取消订阅或更改我收到的信息类型。",
+      pl: "Chcę otrzymywać aktualizacje i wiadomości od Materialise. Mogę zrezygnować z subskrypcji w dowolnym momencie lub zmienić rodzaj otrzymywanej komunikacji w centrum preferencji.",
+      
     },
     WF_MTN_Phits: {
       en: "I would like to use phits for",
@@ -392,7 +430,8 @@ function pardot_translate(language) {
       ja: "フィッツを使いたいのは", // deepl
       ko: "나는 핏을 사용하고 싶다", // deepl
       es: "Me gustaría utilizar phits para", // deepl
-      zh: "我想用phits用于以下目的",
+      zh: "我想用phits用于以下目的", // deepl
+      pl: "I would like to use phits for", // deepl
     },
 
     WF_SOFT_Subtitle_1: {
@@ -404,6 +443,7 @@ function pardot_translate(language) {
     ko: "문의사항에 대해 조금 더 자세히 알려주세요",
     es: "Cuéntanos más sobre tu solicitud",
     zh: "告诉我们您的需求",
+    pl: "Tell us more about your request",
    },
     WF_SOFT_Subtitle_2: {
       en: "Company information",
@@ -414,6 +454,7 @@ function pardot_translate(language) {
       ko: "회사 정보",
       es: "Información sobre la empresa",
       zh: "公司信息",
+      pl: "Company information",
     },
     WF_SOFT_Subtitle_3:{
       en: "How can we contact you?",
@@ -424,6 +465,7 @@ function pardot_translate(language) {
       ko: "어떻게 연락드리면 될까요?",
       es: "¿Cómo podemos contactarte?",
       zh: "我们如何联系您？",
+      pl: "How can we contact you?",
     },
   };
 
@@ -453,7 +495,8 @@ function pardot_translate(language) {
         ja: "送信", // deepl
         ko: "문의하기", // deepl
         es: "Enviar un mensaje", // deepl
-        zh: "发送消息",
+        zh: "发送消息", // deepl
+        pl: "Wyślij wiadomość", // deepl
       },
     ],
     [
@@ -466,7 +509,8 @@ function pardot_translate(language) {
         ja: "ダウンロード", // deepl
         ko: "다운로드", // deepl
         es: "Descargar", // deepl
-        zh: "下载",
+        zh: "下载", // deepl
+        pl: "Download", // deepl
       },
     ],
     [
@@ -479,7 +523,8 @@ function pardot_translate(language) {
         ja: "録画の視聴", // deepl
         ko: "녹화 보기", // deepl
         es: "Ver grabación", // deepl
-        zh: "观看录像",
+        zh: "观看录像", // deepl
+        pl: "Watch recording", // deepl
       },
     ],
     [
@@ -492,7 +537,8 @@ function pardot_translate(language) {
         ja: "ホワイトペーパーをダウンロード", // deepl
         ko: "백서 다운로드", // deepl
         es: "Descargar el libro blanco", // deepl
-        zh: "下载白皮书",
+        zh: "下载白皮书", // deepl
+        pl: "Download the whitepaper", // deepl
       },
     ],
     [
@@ -506,6 +552,7 @@ function pardot_translate(language) {
         ko: "평가판 요청", // deepl
         es: "Solicitar prueba", // deepl
         zh: "请求试用权限",
+        pl: "Request trial access",
       },
     ],
   ]);
@@ -535,6 +582,7 @@ function pardot_translate(language) {
         ko: "의료 장치 R&D",
         es: "I+D de dispositivos médicos",
         zh: "医疗器械研发",
+        pl: "Medical device R&D",
       },
     ],
     [
@@ -548,6 +596,7 @@ function pardot_translate(language) {
         ko: "개인 맞춤화 장치 설계 및 계획",
         es: "Diseño y planificación de dispositivos personalizados",
         zh: "个性化设备设计与规划",
+        pl: "Personalized device design & planning",
       },
     ],
     // [
@@ -597,6 +646,7 @@ function pardot_translate(language) {
         ko: "예",
         es: "Sí",
         zh: "是",
+        pl: "Yes",
       },
     ],
     [
@@ -610,6 +660,7 @@ function pardot_translate(language) {
         ko: "아니", // deepl
         es: "No", // deepl
         zh: "否",
+        pl: "No", // deepl
       },
     ],
     // [
@@ -970,6 +1021,7 @@ function pardot_translate(language) {
         ko: "운송 및 중장비",  // deepl
         es: "Transporte y equipo pesado", // deepl
         zh: "交通和重型设备",
+        pl: "Transport & heavy equipment",
       },
     ],
     [
@@ -983,6 +1035,7 @@ function pardot_translate(language) {
         ko: "eVTOL",
         es: "eVTOL",
         zh: "eVTOL飞行器",
+        pl: "eVTOL",
       },
     ],
     [
@@ -996,6 +1049,7 @@ function pardot_translate(language) {
         ko: "MRO",
         es: "MRO",
         zh: "MRO服务",
+        pl: "MRO",
       },
     ],
     [
@@ -1009,6 +1063,7 @@ function pardot_translate(language) {
         ko: "OEM",
         es: "OEM",
         zh: "OEM",
+        pl: "OEM",
       },
     ],
     [
@@ -1022,6 +1077,7 @@ function pardot_translate(language) {
         ko: "Tiers",
         es: "Tiers",
         zh: "级别",
+        pl: "Tiers",
       },
     ],
     [
@@ -1035,6 +1091,7 @@ function pardot_translate(language) {
         ko: "없음, 3D 프린팅에 대해 조사 중",
         es: "Ninguno, estoy considerando la impresión 3D",
         zh: "无，正考虑进入3D打印领域",
+        pl: "None, looking into 3D printing",
       },
     ],
     [
@@ -1048,6 +1105,7 @@ function pardot_translate(language) {
         ko: "소프트웨어 리셀러",
         es: "Distribuidor de software",
         zh: "软件经销商",
+        pl: "Software reseller",
       },
     ],
     [
@@ -1061,6 +1119,7 @@ function pardot_translate(language) {
         ko: "기계 제조업체",
         es: "Fabricante de máquinas",
         zh: "设备制造商",
+        pl: "Machine manufacturer",
       },
     ],
     [
@@ -1074,6 +1133,7 @@ function pardot_translate(language) {
         ko: "독자적 소프트웨어 공급업체/개발자",
         es: "Proveedor/desarrollador de software independiente",
         zh: "独立软件供应商/开发商",
+        pl: "Independent software vendor/developer",
       },
     ],
     [
@@ -1087,6 +1147,7 @@ function pardot_translate(language) {
         ko: "교육 기관",
         es: "Institución educativa",
         zh: "教育机构",
+        pl: "Educational institution",
       },
     ],
     // [
@@ -1424,6 +1485,7 @@ function pardot_translate(language) {
         ko: "데모 프로그램을 받고 싶습니다",
         es: "Me gustaría conseguir una demo",
         zh: "我想看演示",
+        pl: "I want to get a demo",
       },
     ],
     [
@@ -1437,6 +1499,7 @@ function pardot_translate(language) {
         ko: "영업부와 상담하고 싶습니다",
         es: "Me gustaría hablar con el departamento de ventas",
         zh: "我想和销售人员沟通",
+        pl: "I would like to talk to sales",
       },
     ],
     [
@@ -1450,6 +1513,7 @@ function pardot_translate(language) {
         ko: "기타 문의 사항이 있습니다다",
         es: "Tengo otra pregunta",
         zh: "我还有其他问题",
+        pl: "I have another question",
       },
     ],
     [
@@ -1463,6 +1527,7 @@ function pardot_translate(language) {
         ko: "둔부",
         es: "Cadera",
         zh: "臀部",
+        pl: "Hip",
       },
     ],
     [
@@ -1476,6 +1541,7 @@ function pardot_translate(language) {
         ko: "골절술",
         es: "Osteotomía",
         zh: "截骨术",
+        pl: "Osteotomy",
       },
     ],
     [
@@ -1489,6 +1555,7 @@ function pardot_translate(language) {
         ko: "견각",
         es: "Hombro",
         zh: "肩部",
+        pl: "Shoulder",
       },
     ],
     [
@@ -1502,6 +1569,7 @@ function pardot_translate(language) {
         ko: "PhD 과정",
         es: "Estudiante de doctorado",
         zh: "博士生",
+        pl: "PhD Student",
       },
     ],
     // [
@@ -1551,6 +1619,7 @@ function pardot_translate(language) {
         ko: "DPM/발 전문가",
         es: "DPM/Podólogo",
         zh: "DPM/足科医生",
+        pl: "DPM/Podiatrist",
       },
     ],
     [
@@ -1564,6 +1633,7 @@ function pardot_translate(language) {
         ko: "정형외과/O&P",
         es: "Ortopeda/Órtesis y prótesis",
         zh: "骨科医生/O&P",
+        pl: "Orthopedist/O&P",
       },
     ],
     [
@@ -1577,6 +1647,7 @@ function pardot_translate(language) {
         ko: "카이로프랙터",
         es: "Quiropráctico",
         zh: "脊骨神经科医生",
+        pl: "Chiropractor",
       },
     ],
     [
@@ -1590,6 +1661,7 @@ function pardot_translate(language) {
         ko: "물리치료사",
         es: "Fisioterapeuta",
         zh: "理疗师",
+        pl: "Physiotherapist",
       },
     ],
     [
@@ -1603,6 +1675,7 @@ function pardot_translate(language) {
         ko: "연구원",
         es: "Investigador",
         zh: "研究人员",
+        pl: "Researcher",
       },
     ],
     [
@@ -1616,6 +1689,7 @@ function pardot_translate(language) {
         ko: "유통업체",
         es: "Distribuidor",
         zh: "分销商",
+        pl: "Distributor",
       },
     ],
     [
@@ -1629,6 +1703,7 @@ function pardot_translate(language) {
         ko: "에이전시",
         es: "Agente",
         zh: "代理商",
+        pl: "Agent",
       },
     ],
     [
@@ -1642,6 +1717,7 @@ function pardot_translate(language) {
         ko: "IT 부서",
         es: "Departamento de informática",
         zh: "IT部门",
+        pl: "IT department",
       },
     ],
     [
@@ -1655,6 +1731,7 @@ function pardot_translate(language) {
         ko: "융합 증착 모델링(FDM)",
         es: "Modelado por deposición fundida (FDM)",
         zh: "熔融沉积成型 (FDM)",
+        pl: "Fused deposition Modeling (FDM)",
       },
     ],
     [
@@ -1668,6 +1745,7 @@ function pardot_translate(language) {
         ko: "레이저 소결",
         es: "Sinterización por láser",
         zh: "激光烧结",
+        pl: "Laser sintering",
       },
     ],
     [
@@ -1681,6 +1759,7 @@ function pardot_translate(language) {
         ko: "제조",
         es: "Fabricación",
         zh: "制造",
+        pl: "Manufacturing",
       },
     ],
     [
@@ -1694,6 +1773,7 @@ function pardot_translate(language) {
         ko: "금속 3D 프린팅",
         es: "Impresión 3D en metal",
         zh: "金属3D打印",
+        pl: "Metal 3D printing",
       },
     ],
     [
@@ -1707,6 +1787,7 @@ function pardot_translate(language) {
         ko: "멀티 젯 퓨전",
         es: "Multi jet fusion",
         zh: "多射流熔融成型",
+        pl: "Multi jet fusion",
       },
     ],
     [
@@ -1720,6 +1801,7 @@ function pardot_translate(language) {
         ko: "프로토타이핑",
         es: "Prototipado",
         zh: "原型制作",
+        pl: "Prototyping",
       },
     ],
     // [
@@ -1745,6 +1827,7 @@ function pardot_translate(language) {
         ko: "광조형",
         es: "Estereolitografía",
         zh: "立体光刻",
+        pl: "Stereolithography",
       },
     ],
     [
@@ -1758,6 +1841,7 @@ function pardot_translate(language) {
         ko: "석사 과정 학생",
         es: "Estudiante de máster",
         zh: "硕士生",
+        pl: "Master student",
       },
     ],
     [
@@ -1771,6 +1855,7 @@ function pardot_translate(language) {
         ko: "박사 연구원 또는 교수",
         es: "Investigador/a de doctorado o profesor/a universitario/a",
         zh: "博士研究员或教授",
+        pl: "PhD researcher or professor",
       },
     ],
     [
@@ -1784,6 +1869,7 @@ function pardot_translate(language) {
         ko: "파운드리",
         es: "Fundiciones",
         zh: "铸造厂",
+        pl: "Foundries",
       },
     ],
     [
@@ -1797,6 +1883,7 @@ function pardot_translate(language) {
         ko: "산업용품 및 장비",
         es: "Productos y equipos industriales",
         zh: "工业品及设备",
+        pl: "Industrial goods & equipment",
       },
     ],
     [
@@ -1810,6 +1897,7 @@ function pardot_translate(language) {
         ko: "의료 장비 및 기계",
         es: "Maquinaria y equipos médicos",
         zh: "医疗设备和机械",
+        pl: "Medical equipment & machinery",
       },
     ],
     [
@@ -1823,6 +1911,7 @@ function pardot_translate(language) {
         ko: "툴링 및 밀링",
         es: "Instrumental y fundición",
         zh: "加工和铣削",
+        pl: "Tooling & milling",
       },
     ],
     [
@@ -1836,6 +1925,7 @@ function pardot_translate(language) {
         ko: "주문, 견적 또는 배송",
         es: "Pedido, presupuesto o entrega",
         zh: "订单、报价或交货",
+        pl: "Order, quote or delivery",
       },
     ],
     [
@@ -1849,6 +1939,7 @@ function pardot_translate(language) {
         ko: "기술 문의",
         es: "Consulta técnica",
         zh: "技术咨询",
+        pl: "Technical enquiry",
       },
     ],
     [
@@ -1862,6 +1953,7 @@ function pardot_translate(language) {
         ko: "기타",
         es: "Otra cosa",
         zh: "其它",
+        pl: "Something else",
       },
     ],
     [
@@ -1875,6 +1967,7 @@ function pardot_translate(language) {
         ko: "병원: 대학 또는 교육 센터",
         es: "Hospital: universitario o centro de enseñanza",
         zh: "医院：大学或教学中心",
+        pl: "Hospital: university or teaching center",
       },
     ],
     [
@@ -1888,6 +1981,7 @@ function pardot_translate(language) {
         ko: "병원: 지역 센터",
         es: "Hospital: centro regional",
         zh: "醫院：區域中心",
+        pl: "Hospital: regional center",
       },
     ],
     [
@@ -1901,6 +1995,7 @@ function pardot_translate(language) {
         ko: "병원: 개인 진료",
         es: "Hospital: consulta privada",
         zh: "医院：私营医疗院所",
+        pl: "Hospital: private practice",
       },
     ],
     // [
@@ -1926,6 +2021,7 @@ function pardot_translate(language) {
         ko: "캐주얼 사용", // deepl
         es: "Uso ocasional", // deepl
         zh: "随意使用",
+        pl: "Casual use",
       },
     ],
     [
@@ -1939,6 +2035,7 @@ function pardot_translate(language) {
         ko: "통증 완화", // deepl
         es: "Alivio del dolor", // deepl
         zh: "止痛",
+        pl: "Pain relief",
       },
     ],
     [
@@ -1952,6 +2049,7 @@ function pardot_translate(language) {
         ko: "스포츠", // deepl
         es: "Deportes", // deepl
         zh: "运动",
+        pl: "Sports",
       },
     ],
     [
@@ -1965,6 +2063,7 @@ function pardot_translate(language) {
         ko: "프로필", // deepl
         es: "Perfil", // deepl
         zh: "轮廓", //deepl
+        pl: "Profile",
       },
     ],
     [
@@ -1978,6 +2077,7 @@ function pardot_translate(language) {
         ko: "Professional", // deepl
         es: "Professional", // deepl
         zh: "Professional",
+        pl: "Professional",
       },
     ]
   ]);
@@ -2038,6 +2138,7 @@ function pardot_translate(language) {
     ko: "백서 다운로드", // deepl
     es: "Descargar el libro blanco", // deepl
     zh: "下载白皮书",
+    pl: "Download the whitepaper",
   }
 
 
