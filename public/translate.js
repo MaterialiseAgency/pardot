@@ -210,7 +210,7 @@ function pardot_translate(language) {
       ko: "무엇에 관한 문의인가요?",
       es: "¿De qué trata su consulta?",
       zh: "您需要询价的产品是什么？",
-      pl: "What is your inquiry about?",
+      pl: "Czego dotyczy zapytanie?",
     },
     WF_MAN_Comments: {
       en: "Please describe your request:",
@@ -221,7 +221,7 @@ function pardot_translate(language) {
       ko: "문의 사항을 설명:",
       es: "Describa su consulta por favor:",
       zh: "请描述您的要求",
-      pl: "Please describe your request:",
+      pl: "Opisz swoją prośbę",
     },
     WF_MAN_Industry: {
       en: "Industry",
@@ -276,7 +276,7 @@ function pardot_translate(language) {
       ko: "무엇에 관한 문의인가요?",
       es: "¿De qué trata su consulta?",
       zh: "您需要询价的产品是什么？",
-      pl: "What is your inquiry about?",
+      pl: "Czego dotyczy zapytanie?",
     },
     WF_MTN_Comments: {
       en: "Please describe your inquiry:",
@@ -287,7 +287,7 @@ function pardot_translate(language) {
       ko: "문의 사항을 설명:",
       es: "Describa su consulta por favor:",
       zh: "请描述您的询价：",
-      pl: "Please describe your inquiry:",
+      pl: "Opisz swoją prośbę",
     },
     Sector: {
       en: "Sector",
@@ -411,15 +411,15 @@ function pardot_translate(language) {
       pl: "How many 3D printing-related sites does your company operate?",
     }, 
     WF_XBU_Newsletter_subscribe: {
-      en: "I want to receive updates and news from Materialise. I can unsubscribe at any time or change the types of communication I receive in the preference center.",
-      de: "Ich möchte Updates und Neuigkeiten von Materialise erhalten. Ich kann mich jederzeit abmelden oder die Art der mir zugesandten Informationen im Preference Center ändern.",
-      fr: "Je veux recevoir des mises à jour et des nouveautés Materialise. Je peux me désabonner à tout moment ou modifier les types de communication que je reçois dans le centre de préférences.",
-      it: "Desidero ricevere aggiornamenti e novità da Materialise. Posso annullare l'iscrizione in qualsiasi momento o modificare i tipi di comunicazione che ricevo nel centro preferenze.",
-      ja: "Materialiseからの最新情報やニュースを受け取る プリファレンスセンターで、メール購読を解除したり、受信する情報の種類をいつでも変更可能です。",
-      ko: "Materialise의 업데이트와 소식을 받고 싶습니다. 언제든지 수신을 거부하거나 기본 설정 센터에서 수신 유형을 변경할 수 있습니다.",
-      es: "Quiero recibir actualizaciones y noticias de Materialise. Puedo cancelar la suscripción en cualquier momento o cambiar los tipos de comunicación que recibo en el centro de preferencias.",
-      zh: "我希望收到来自Materialise玛瑞斯的信息更新和资讯。我可以在首选项中心随时取消订阅或更改我收到的信息类型。",
-      pl: "Chcę otrzymywać aktualizacje i wiadomości od Materialise. Mogę zrezygnować z subskrypcji w dowolnym momencie lub zmienić rodzaj otrzymywanej komunikacji w centrum preferencji.",
+      en: "I want to receive updates and news from Materialise.*",
+      de: "Ich möchte Updates und Neuigkeiten von Materialise erhalten.*",
+      fr: "Je veux recevoir des mises à jour et des nouveautés Materialise.*",
+      it: "Desidero ricevere aggiornamenti e novità da Materialise.*",
+      ja: "Materialiseからの最新情報やニュースを受け取る プリファレンスセンターで。*",
+      ko: "Materialise의 업데이트와 소식을 받고 싶습니다.*",
+      es: "Quiero recibir actualizaciones y noticias de Materialise.*",
+      zh: "我希望收到来自Materialise玛瑞斯的信息更新和资讯 *",
+      pl: "Chcę otrzymywać aktualizacje i wiadomości od Materialise.*",
       
     },
     WF_MTN_Phits: {
@@ -2128,6 +2128,19 @@ function pardot_translate(language) {
     pl: `The personal data that you provide us will only be used to process your request and/or registration in accordance with our <a class="text-mtls-color-text-link" href="https://www.materialise.com/en/data-privacy-notice" target="_blank">Privacy Notice</a> .<br>*You can unsubscribe at any time or change the types of communication you receive in our preference center.`,
     
   }
+// only for HP form
+  const gdpr_legitimate_custom = {
+    en: `The personal data that you provide Materialise will be used to process your request and/or registration and in accordance with our&nbsp; <a class="text-mtls-color-text-link" href="/en/privacy-notice" tabindex="{-1}" target="_blank">Privacy Notice</a>,&nbsp;and will be shared with our co-host HP who will handle your data as per their&nbsp;<a class="text-mtls-color-text-link" href="https://www.hp.com/us-en/privacy/privacy.html">https://www.hp.com/us-en/privacy/privacy.html</a>`,
+    de: `The personal data that you provide Materialise will be used to process your request and/or registration and in accordance with our&nbsp; <a class="text-mtls-color-text-link" href="/en/privacy-notice" tabindex="{-1}" target="_blank">Privacy Notice</a>,&nbsp;and will be shared with our co-host HP who will handle your data as per their&nbsp;<a class="text-mtls-color-text-link" href="https://www.hp.com/us-en/privacy/privacy.html">https://www.hp.com/us-en/privacy/privacy.html</a>`,
+    fr: `The personal data that you provide Materialise will be used to process your request and/or registration and in accordance with our&nbsp; <a class="text-mtls-color-text-link" href="/en/privacy-notice" tabindex="{-1}" target="_blank">Privacy Notice</a>,&nbsp;and will be shared with our co-host HP who will handle your data as per their&nbsp;<a class="text-mtls-color-text-link" href="https://www.hp.com/us-en/privacy/privacy.html">https://www.hp.com/us-en/privacy/privacy.html</a>>`,
+    it: `The personal data that you provide Materialise will be used to process your request and/or registration and in accordance with our&nbsp; <a class="text-mtls-color-text-link" href="/en/privacy-notice" tabindex="{-1}" target="_blank">Privacy Notice</a>,&nbsp;and will be shared with our co-host HP who will handle your data as per their&nbsp;<a class="text-mtls-color-text-link" href="https://www.hp.com/us-en/privacy/privacy.html">https://www.hp.com/us-en/privacy/privacy.html</a>`,
+    ja: `The personal data that you provide Materialise will be used to process your request and/or registration and in accordance with our&nbsp; <a class="text-mtls-color-text-link" href="/en/privacy-notice" tabindex="{-1}" target="_blank">Privacy Notice</a>,&nbsp;and will be shared with our co-host HP who will handle your data as per their&nbsp;<a class="text-mtls-color-text-link" href="https://www.hp.com/us-en/privacy/privacy.html">https://www.hp.com/us-en/privacy/privacy.html</a>`,
+    ko: `The personal data that you provide Materialise will be used to process your request and/or registration and in accordance with our&nbsp; <a class="text-mtls-color-text-link" href="/en/privacy-notice" tabindex="{-1}" target="_blank">Privacy Notice</a>,&nbsp;and will be shared with our co-host HP who will handle your data as per their&nbsp;<a class="text-mtls-color-text-link" href="https://www.hp.com/us-en/privacy/privacy.html">https://www.hp.com/us-en/privacy/privacy.html</a>`,
+    es: `The personal data that you provide Materialise will be used to process your request and/or registration and in accordance with our&nbsp; <a class="text-mtls-color-text-link" href="/en/privacy-notice" tabindex="{-1}" target="_blank">Privacy Notice</a>,&nbsp;and will be shared with our co-host HP who will handle your data as per their&nbsp;<a class="text-mtls-color-text-link" href="https://www.hp.com/us-en/privacy/privacy.html">https://www.hp.com/us-en/privacy/privacy.html</a>`,
+    zh: `The personal data that you provide Materialise will be used to process your request and/or registration and in accordance with our&nbsp; <a class="text-mtls-color-text-link" href="/en/privacy-notice" tabindex="{-1}" target="_blank">Privacy Notice</a>,&nbsp;and will be shared with our co-host HP who will handle your data as per their&nbsp;<a class="text-mtls-color-text-link" href="https://www.hp.com/us-en/privacy/privacy.html">https://www.hp.com/us-en/privacy/privacy.html</a>`,
+    pl: `The personal data that you provide Materialise will be used to process your request and/or registration and in accordance with our&nbsp; <a class="text-mtls-color-text-link" href="/en/privacy-notice" tabindex="{-1}" target="_blank">Privacy Notice</a>,&nbsp;and will be shared with our co-host HP who will handle your data as per their&nbsp;<a class="text-mtls-color-text-link" href="https://www.hp.com/us-en/privacy/privacy.html">https://www.hp.com/us-en/privacy/privacy.html</a>`,
+    
+  }
 
   const form_header = {
     en: "Download the whitepaper",
@@ -2142,11 +2155,14 @@ function pardot_translate(language) {
   }
 
 
-
+  const gdpr_legit_block_custom = document.getElementById('gdpr_legitimate_custom')
   const gdpr_legit_block = document.getElementById('gdpr-legitimate')
   const gdpr_none_legit_block = document.getElementById('gdpr-none-legitimate')
   const form_header_block = document.getElementById('form_header')
 
+  if (gdpr_legit_block_custom) {
+    gdpr_legit_block_custom.innerHTML = language ? gdpr_legitimate_custom[`${language}`] : gdpr_legitimate_custom[`en`]
+  }
 
   if (gdpr_legit_block) {
     gdpr_legit_block.innerHTML = language ? gdpr_legitimate[`${language}`] : gdpr_legitimate[`en`]
